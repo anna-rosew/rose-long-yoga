@@ -1,0 +1,358 @@
+.card {
+  margin-bottom: 20px;
+}
+
+.card .group-image-container:hover {
+  transform: scale(1.03); /* Scale up by 5% on hover */
+}
+.card-links {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.group-cards h2 {
+  margin-bottom: 10px;
+}
+
+.group-image-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+.group-image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: --image-border-radius;
+}
+
+.section-spacing {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.online-groups-section {
+  margin-top: 30px;
+}
+
+.yoga-image-container {
+  position: relative;
+  width: 180px;
+}
+
+.yoga-image {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.class-details {
+  margin: 0;
+}
+
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+}
+
+.overlay-svg {
+  height: 80px;
+}
+
+.overlay-svg2 {
+  height: 35px;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.hr-lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+.hr-lines {
+  position: relative;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.retreat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.retreats {
+  margin-bottom: 20px;
+}
+
+.retreat-img-container {
+  position: relative;
+  width: 590px;
+  height: 430px;
+}
+
+.retreat-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 127px;
+}
+
+.book-btn {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.book-btn-two {
+  width: 80%;
+  margin-top: 45px;
+}
+
+.retreat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+  border-radius: 127px;
+}
+
+.retreat-img-container:hover .retreat-overlay {
+  opacity: 1;
+}
+
+.retreat-overlay h3,
+.retreat-overlay h2,
+.retreat-overlay p,
+.retreat-overlay span {
+  margin: 5px 0;
+  color: white;
+}
+
+.retreat-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.retreat-overlay span img {
+  margin-right: 5px;
+}
+
+.retreat-info-mobile {
+  display: none;
+}
+
+.in-person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.in-person-sessions {
+  margin-bottom: 20px;
+}
+
+.in-person-img-container {
+  position: relative;
+  width: 100%;
+  height: 430px;
+}
+
+.in-person-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 23px;
+}
+
+.in-person-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+  border-radius: 23px;
+}
+
+.in-person-img-container:hover .in-person-overlay {
+  opacity: 1;
+}
+
+.in-person-overlay h3,
+.in-person-overlay h2,
+.in-person-overlay p,
+.in-person-overlay span {
+  margin: 10px 0;
+  color: white;
+}
+
+.in-person-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.in-person-overlay span img {
+  margin-right: 5px;
+}
+
+.in-person-overlay .overlay-svg,
+.in-person-overlay .overlay-svg2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.in-person-info-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .grid.grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .in-person-img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .in-person-image {
+    border-radius: 20px;
+  }
+
+  .in-person-info-mobile {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .in-person-info-mobile span {
+    display: flex;
+    align-items: center;
+  }
+
+  .in-person-info-mobile h3 {
+    margin-bottom: 0px;
+  }
+
+  .in-person-overlay .overlay-svg,
+  .in-person-overlay .overlay-svg2 {
+    color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .retreat-img-container {
+    width: 300px; /* Adjusted to 621px */
+    height: 300px;
+  }
+
+  .retreat-image {
+    border-radius: 57px;
+  }
+
+  .retreat-overlay {
+    border-radius: 57px;
+  }
+
+  .book-btn-two {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .group-cards {
+    margin: 0px 10px;
+  }
+
+  .hr-lines:before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 85px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: black;
+  }
+
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 85px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .retreats {
+    text-align: left;
+  }
+}

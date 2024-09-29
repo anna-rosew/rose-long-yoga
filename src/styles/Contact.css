@@ -1,0 +1,215 @@
+.contact h1 {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.contact h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.contact p {
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.forms-container {
+  display: block;
+  width: 100%;
+}
+
+.grid-contact {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.stay-in-touch {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.error {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  color: black;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.newsletter-icon {
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .heading-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .call-to-action {
+    padding-left: 0;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form-container {
+  display: block;
+  flex-direction: column;
+  align-items: stretch; /* Ensure items stretch to container width */
+  padding: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: black;
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(
+    100% - 22px
+  ); /* Adjust width to account for padding and borders */
+  padding: 5px;
+  border: 2px solid black;
+
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.form-group textarea {
+  resize: none; /* Make textarea non-resizable */
+  min-height: 20px; /* Minimum height for message textarea */
+  height: 20px; /* Fixed height for message textarea */
+}
+
+.mailto-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.mailto-button :hover {
+  background-color: black;
+  color: white;
+}
+
+.form-group #name,
+.form-group #email {
+  height: 35px; /* Fixed height for name and email textarea */
+}
+
+.form-group #message {
+  height: 150px;
+}
+
+.contact .general-button {
+  margin: 10px auto;
+  width: 97%;
+}
+
+.contact-image-container {
+  display: block;
+  width: 600px;
+}
+
+.contact-image-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 45px;
+}
+
+@media (max-width: 768px) {
+  .call-to-action {
+    margin-bottom: 10px;
+
+    margin-left: 10px;
+  }
+
+  .contact h2 {
+    text-align: center;
+  }
+  .grid-contact {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .contact-image-container {
+    display: none;
+  }
+  .contact-form {
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .contact-form-container {
+    margin-left: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  .stay-in-touch {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-icon {
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+  }
+}

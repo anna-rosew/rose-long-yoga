@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #020202;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #020202;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #000;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 155.14px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(479.82 142.89) rotate(5.83) scale(1.04 1)"><tspan x="0" y="0">G</tspan></text>
+  <text class="cls-3" transform="translate(579.37 153.76) rotate(16.32) scale(1.04 1)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(654.48 175.57) rotate(25.85) scale(1.04 1)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-3" transform="translate(723.74 210.43) rotate(32.53) scale(1.04 1)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(751.16 227.73) rotate(36.81) scale(1.04 1)"><tspan x="0" y="0">I</tspan></text>
+  <text class="cls-3" transform="translate(781.03 246.54) rotate(45.41) scale(1.04 1)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-3" transform="translate(851.46 321.38) rotate(53.92) scale(1.04 1)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(867.63 340.55) rotate(60.17) scale(1.04 1)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-3" transform="translate(905.39 401.34) rotate(71.7) scale(1.04 1)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-3" transform="translate(938.91 501.83) rotate(85.48) scale(1.04 1)"><tspan x="0" y="0">U</tspan></text>
+  <text class="cls-3" transform="translate(946.77 601.09) rotate(98.02) scale(1.04 1)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-3" transform="translate(935.58 689.18) rotate(110.73) scale(1.04 1)"><tspan x="0" y="0">H</tspan></text>
+  <g>
+    <g>
+      <path class="cls-2" d="M218.35,282.96c7.92-7.32,129.95-117.02,286.28-115.65,189.09,1.66,418.14,165.73,418.14,418.14,0,230.93-187.21,418.14-418.14,418.14S86.49,816.37,86.49,585.44"/>
+      <circle class="cls-1" cx="214.85" cy="289.17" r="49.68"/>
+      <circle class="cls-1" cx="86.49" cy="563.15" r="46.18"/>
+    </g>
+    <circle class="cls-1" cx="504.63" cy="585.43" r="207.28"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="540" cy="541.83" rx="500.95" ry="521.41"/>
+  <polyline class="cls-1" points="524.49 233.34 524.49 555.01 700.48 675.48"/>
+</svg>

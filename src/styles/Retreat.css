@@ -1,0 +1,154 @@
+.retreat-page {
+  padding: 30px;
+  height: 100vh;
+}
+
+.details-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.workshop-slide {
+  padding: 70px;
+}
+
+.details-span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.image-grid {
+  display: grid;
+  grid-template-areas:
+    "large small1"
+    "large small2";
+  grid-template-columns: 2fr 1fr; /* 2:1 ratio for large to small images */
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Space between images */
+  width: 100%; /* Ensure grid takes full width of its container */
+  max-width: 100%; /* Prevent overflow */
+}
+
+.large-image {
+  grid-area: large;
+  border-radius: 15px; /* Optional: rounded corners */
+  object-fit: cover; /* Ensure image covers its area */
+  width: 100%;
+  height: 100%; /* Fill its grid cell */
+}
+
+.small-image {
+  border-radius: 15px; /* Optional: rounded corners */
+  object-fit: cover; /* Ensure image covers its area */
+  width: 100%;
+  height: 100%; /* Fill its grid cell */
+}
+.retreat-img {
+  border-radius: 45px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-container {
+  border-radius: 45px;
+  height: 600px;
+  width: 543px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.retreat-info-column {
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.get-in-touch {
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 17px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.get-in-touch:hover {
+  color: white;
+  background-color: #2b578e;
+  border: 2px solid #2b578e;
+}
+
+/* Swiper Navigation Styles */
+.workshop-swiper {
+  position: relative; /* Ensure positioning for buttons */
+}
+
+.workshop-swiper-button-next,
+.workshop-swiper-button-prev {
+  color: black !important; /* Arrow color */
+  width: 44px !important; /* Adjust size */
+  height: 44px !important; /* Adjust size */
+  border-radius: 50%; /* Round the arrows */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Ensure the arrows are on top */
+  position: absolute; /* Absolute positioning to place them correctly */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  cursor: pointer; /* Pointer cursor to indicate clickable */
+}
+
+.workshop-swiper-button-next {
+  right: 10px; /* Position for next arrow */
+}
+
+.workshop-swiper-button-prev {
+  left: 10px; /* Position for prev arrow */
+}
+
+.workshop-swiper-button-next::after,
+.workshop-swiper-button-prev::after {
+  font-family: swiper-icons; /* Ensure correct font family */
+  font-size: 20px !important; /* Adjust size */
+  color: black !important; /* Arrow color */
+}
+
+.nav-arrow {
+  height: 70px;
+}
+
+.workshop-swiper .swiper-pagination-bullet-active {
+  background-color: #356d65; /* Active bullet color */
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .event-container {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .slider-container {
+    height: 220px;
+    width: 300px;
+  }
+}

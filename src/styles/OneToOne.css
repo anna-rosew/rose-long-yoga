@@ -1,0 +1,53 @@
+.OneToOne-Page h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.OneToOne-Page .subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+
+.one-to-one-text {
+  display: block;
+  margin: 30px auto;
+}
+
+.OneToOne-Page {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.OneToOne-Page button {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.what-to-expect {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.what-to-expect .heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.what-to-expect img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .OneToOne-Page h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .OneToOne-Page h1 {
+    margin: 0px auto;
+    font-size: 28px;
+    text-align: center;
+  }
+}
