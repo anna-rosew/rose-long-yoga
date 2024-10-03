@@ -1,0 +1,37 @@
+// _about.scss
+.About {
+  h1 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .grid-meet-rose {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .about-image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .about-image {
+      border-radius: 45px;
+      height: 450px;
+      margin: 20px;
+    }
+  }
+
+  @include respond-to(mobile) {
+    .grid-meet-rose {
+      grid-template-columns: 1fr;
+    }
+    .about-image-container {
+      height: 300px;
+    }
+  }
+}

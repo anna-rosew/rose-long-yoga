@@ -37,7 +37,7 @@ export default function Groups() {
           <div className="card online-groups">
             <button onClick={onClick} className="card-links">
               <h2>Online Groups</h2>
-              <h3 className="subtitle">YOGA | COMMUNITY</h3>
+              <h4>YOGA | COMMUNITY</h4>
               <div className="group-image-container">
                 <img
                   src={Online}
@@ -50,7 +50,7 @@ export default function Groups() {
           <div className="card inperson-groups">
             <button onClick={onClick2} className="card-links">
               <h2>In-Person Sessions</h2>
-              <h3 className="subtitle">CLASSES | WORKSHOPS</h3>
+              <h4>CLASSES | WORKSHOPS</h4>
               <div className="group-image-container">
                 <img
                   src={InPerson}
@@ -63,7 +63,7 @@ export default function Groups() {
           <div className="card retreats">
             <button onClick={onClick3} className="card-links">
               <h2>Retreats</h2>
-              <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
+              <h4>JOURNEYS | GROWTH | EXPLORATION</h4>
               <div className="group-image-container">
                 <img
                   src={Retreat}

@@ -1,0 +1,65 @@
+// _typography.scss
+
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://use.typekit.net/kli2wwi.css");
+
+h1 {
+  font-family: $font-secondary;
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+
+h3 {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  opacity: 70%;
+}
+
+p {
+  font-family: $font-primary;
+  line-height: 25px;
+  font-size: 15px;
+  color: black;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include respond-to(mobile) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+}

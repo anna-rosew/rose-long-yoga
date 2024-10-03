@@ -1,0 +1,8 @@
+// _mixins.scss
+@mixin respond-to($size) {
+  @if $size == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }
+}

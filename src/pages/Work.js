@@ -26,7 +26,7 @@ export default function Work() {
           <div className="card">
             <Link to="/approach" className="card-link">
               <h2>Approach</h2>
-              <h3 className="subtitle">LEARN FROM EXPERIENCE</h3>
+              <h4>LEARN FROM EXPERIENCE</h4>
               <div className="work-image-container">
                 <BlurryImage
                   src={MyApproach}
@@ -49,7 +49,7 @@ export default function Work() {
           <div className="card">
             <Link to="/groups" className="card-link">
               <h2>Groups</h2>
-              <h3 className="subtitle">CLASSES - WORKSHOPS - RETREATS</h3>
+              <h4>CLASSES - WORKSHOPS - RETREATS</h4>
               <div className="work-image-container">
                 <BlurryImage
                   src={Groups}
@@ -72,7 +72,7 @@ export default function Work() {
           <div className="card">
             <Link to="/onetoone" className="card-link">
               <h2>One-To-Ones</h2>
-              <h3 className="subtitle">COACHING & YOGA</h3>
+              <h4>COACHING & YOGA</h4>
               <div className="work-image-container">
                 <BlurryImage
                   src={OneToOnes}

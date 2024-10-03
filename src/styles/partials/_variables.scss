@@ -1,0 +1,19 @@
+// _variables.scss
+
+:root {
+  --background-color: #ccbb99;
+}
+
+$primary-color: #862b0d;
+$secondary-color: #ccbb99;
+$tertiary-color: #356d65;
+$font-primary: "Jost", sans-serif;
+$font-secondary: "Jomolhari", serif;
+
+$border-radius: 23px;
+$small-radius: 10px;
+
+$center-margin: 0 auto;
+
+// Grid breakpoints
+$mobile: 768px;

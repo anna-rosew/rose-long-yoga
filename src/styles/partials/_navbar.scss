@@ -1,0 +1,60 @@
+// _navbar.scss
+.NavBar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    margin-left: 100px;
+  }
+
+  .site-logo {
+    content: url("../imgs/icons/logo3_black.svg");
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  .menu-link {
+    padding: 20px 20px 0px;
+    font-family: $font-primary;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background-color: black;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+
+  @include respond-to(mobile) {
+    height: 100px;
+    .site-logo {
+      height: 60px;
+      content: url("../imgs/icons/logo2_black.svg");
+    }
+
+    .menu-link {
+      color: white;
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+}

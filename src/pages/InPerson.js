@@ -62,7 +62,7 @@ export default function InPerson() {
     <div className="Events">
       <div className="container in-person-page">
         <h1>In-Person Sessions</h1>
-        <h3 className="subtitle">YOGA | COMMUNITY</h3>
+        <h4>YOGA | COMMUNITY</h4>
         <Swiper
           pagination={{ clickable: true }}
           navigation={{

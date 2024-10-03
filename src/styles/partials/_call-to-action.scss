@@ -1,0 +1,22 @@
+// _approach.scss
+
+.call-to-action {
+  margin: 10px auto;
+}
+
+.journey-link {
+  display: block;
+  margin: $center-margin;
+}
+
+.approach-text {
+  padding: 20px;
+  text-align: left;
+}
+
+// Responsive styles for mobile screens
+@include respond-to(mobile) {
+  .work-cards {
+    margin: 0px 20px;
+  }
+}

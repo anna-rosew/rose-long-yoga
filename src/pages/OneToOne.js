@@ -8,7 +8,7 @@ export default function OneToOne() {
   return (
     <div className=" container OneToOne-Page">
       <h1>One-To-One Sessions</h1>
-      <h3 className="subtitle">Unlocking the Answers from Within.</h3>
+      <h4>Unlocking the Answers from Within.</h4>
 
       <div className="player-wrapper">
         <iframe
@@ -39,7 +39,7 @@ export default function OneToOne() {
           <strong>Small steps to lasting change.</strong>
         </p>
         <div className="what-to-expect">
-          <h3 className="subtitle">What to expect</h3>
+          <h4>What to expect</h4>
           <div className="grid grid-3-columns">
             <div className="item-one">
               <p className="heading">Choose Your Rhythm</p>
