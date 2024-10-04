@@ -12,11 +12,6 @@
   text-align: left;
 }
 
-.grid {
-  display: grid;
-  gap: 20px;
-}
-
 .forms-container {
   display: block;
   width: 100%;
