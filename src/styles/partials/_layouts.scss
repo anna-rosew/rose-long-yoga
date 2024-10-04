@@ -64,10 +64,16 @@
   grid-template-columns: 1fr 1fr;
   justify-content: flex-start;
   width: 100%;
+  text-align: center;
 
+  // Media query for mobile responsiveness
   @include respond-to(mobile) {
-    margin-left: 10px;
     gap: 20px;
     grid-template-columns: 1fr;
+  }
+
+  // Ensure the buttons inside the grid take full width of the grid column
+  .general-button {
+    width: 70%;
   }
 }
