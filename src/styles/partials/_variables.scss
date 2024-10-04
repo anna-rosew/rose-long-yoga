@@ -1,7 +1,15 @@
 // _variables.scss
 
 :root {
-  --background-color: #ccbb99;
+  background-color: #f6ece1;
+  --image-border-radius: 23px;
+}
+body {
+  margin: 0;
+  width: 100%;
+}
+* {
+  scroll-behavior: smooth;
 }
 
 $primary-color: #862b0d;
