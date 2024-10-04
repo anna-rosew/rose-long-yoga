@@ -43,6 +43,30 @@
     }
   }
 
+  .home-link:hover::after {
+    width: 60%;
+  }
+
+  .work-link:hover::after {
+    width: 80%;
+  }
+
+  .about-link:hover::after {
+    width: 60%;
+  }
+
+  .contact-link:hover::after {
+    width: 70%;
+  }
+
+  .membership-link:hover::after {
+    width: 75%;
+  }
+
+  .blog-link:hover::after {
+    width: 60%;
+  }
+
   @include respond-to(mobile) {
     height: 100px;
     .site-logo {
