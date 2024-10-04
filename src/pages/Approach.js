@@ -26,7 +26,7 @@ export default function Approach() {
           <button className="general-button">Start Your Journey</button>
         </Link>
       </div>
-      <div className="approach-text">
+      <div className="text">
         <p>
           The ancients knew the power of the{" "}
           <strong>mind, body and the breath</strong>, and modern research is

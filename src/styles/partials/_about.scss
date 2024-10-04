@@ -6,6 +6,7 @@
 
   p {
     text-align: left;
+    display: block;
   }
 
   .grid-meet-rose {
@@ -20,7 +21,8 @@
     height: 100%;
 
     .about-image {
-      border-radius: 45px;
+      display: block;
+      border-radius: $border-radius;
       height: 450px;
       margin: 20px;
     }

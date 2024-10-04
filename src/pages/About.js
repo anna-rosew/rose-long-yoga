@@ -12,7 +12,7 @@ export default function About() {
           <h1>Meet Rose</h1>
         </div>
         <div className="grid grid-meet-rose">
-          <div className="about-para">
+          <div className="text">
             <p>
               I used to regularly ask myself, ‘What’s the point?’ Life was a
               struggle; I didn’t like what was going on in the world, or inside
