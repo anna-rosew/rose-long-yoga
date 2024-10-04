@@ -49,4 +49,25 @@
 
 .text {
   text-align: left;
+  margin: 5px;
+  display: block;
+}
+
+.quote {
+  color: #862b0d;
+  padding: 20px 30px;
+}
+
+.grid-button-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include respond-to(mobile) {
+    margin-left: 10px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
 }

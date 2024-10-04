@@ -27,7 +27,7 @@ export default function About() {
               place. In chaos and despair, I admitted I didn’t know how to live
               but longed to learn. Admitting this sparked change.
             </p>
-            <p className="about-quote">
+            <p className="quote">
               The despair I felt began to transform into quiet gratitude and
               wonder.
             </p>
@@ -40,7 +40,7 @@ export default function About() {
               challenge keeps me inspired and motivated to keep learning and
               growing myself.
             </p>
-            <div className="about-button-container">
+            <div className="grid-button-container">
               <Link to="/blog" className="general-button">
                 Blog
               </Link>
