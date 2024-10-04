@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 
-import "../styles/Approach.css";
+import "../styles/partials/_approach.scss";
 import "../styles/App.css";
 
 export default function Approach() {

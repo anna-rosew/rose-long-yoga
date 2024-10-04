@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/About.css";
 import Rose1 from "../styles/imgs/photos/about2.png";
 import { Link } from "react-router-dom";
 import BlurryImage from "../components/BlurryImage";
