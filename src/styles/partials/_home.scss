@@ -3,7 +3,7 @@
   text-align: center;
 
   @include respond-to(medium) {
-    height: 80vh;
+    height: 70vh;
   }
 
   .home-header {
@@ -20,7 +20,7 @@
     background-size: cover;
     background-position: center;
     height: 28.13em;
-    padding-left: 21.88em;
+
     margin: 0.63em 21.88em;
     border-radius: $border-radius;
 

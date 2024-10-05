@@ -1,4 +1,4 @@
-//_images.scss
+// _images.scss
 
 .img-responsive {
   max-width: 100%;
@@ -15,11 +15,30 @@
 
 .img-hover img {
   display: block;
-  transition: color 0.5s, background-color 0.3s, border 0.3s;
+  transition: filter 0.3s, color 0.5s, background-color 0.3s, border 0.3s;
   border-radius: var(--image-border-radius);
 
   &:hover {
     cursor: pointer;
-    transition: color 0.5s, background-color 0.3s, border 0.3s;
+  }
+}
+
+.blurry-image-container {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+  }
+
+  &.loading img {
+    filter: blur(10px);
+  }
+
+  &.loaded img {
+    filter: blur(0);
   }
 }
