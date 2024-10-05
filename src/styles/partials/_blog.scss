@@ -12,10 +12,11 @@
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
-  margin: 2em auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  margin: 3em auto;
   width: 100%;
+  padding: 0.6em;
 }
 
 .blog-heading {

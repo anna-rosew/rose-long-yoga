@@ -13,7 +13,7 @@ const Ul = styled.ul`
     color: black;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1152px) {
     flex-flow: column nowrap;
     color: white;
     background-color: #356d65;

@@ -1,45 +1,48 @@
-// _navbar.scss
 .NavBar {
   width: 100%;
-  height: 150px;
+  height: 9.375em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 0 1.25em;
 
   .logo {
-    position: absolute;
-    left: 20px;
-    margin-left: 100px;
+    margin-left: 1.25em;
+    flex-shrink: 0;
   }
 
   .site-logo {
     content: url("../imgs/icons/logo3_black.svg");
-    height: 150px;
-    margin-top: 30px;
+    height: 9.375em;
   }
 
-  .menu-link {
-    padding: 20px 20px 0px;
-    font-family: $font-primary;
-    font-size: 18px;
-    color: black;
-    text-transform: uppercase;
-    position: relative;
+  .menu-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 20px;
-      bottom: 0;
-      height: 2px;
-      width: 0;
-      background-color: black;
-      transition: width 0.3s ease;
-    }
+    .menu-link {
+      padding: 1.25em 1.25em 0;
+      font-family: $font-primary;
+      font-size: 1.125em;
+      color: black;
+      text-transform: uppercase;
+      position: relative;
 
-    &:hover::after {
-      width: 80%;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 1.25em;
+        bottom: 0;
+        height: 0.125em;
+        width: 0;
+        background-color: black;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 80%;
+      }
     }
   }
 
@@ -67,15 +70,18 @@
     width: 60%;
   }
 
-  @include respond-to(mobile) {
-    height: 100px;
+  // Apply mobile styles for screens smaller than or equal to 1152px
+  @media (max-width: 1152px) {
+    height: 6.25em;
+
     .site-logo {
-      height: 60px;
+      height: 3.75em;
       content: url("../imgs/icons/logo2_black.svg");
     }
 
     .menu-link {
       color: white;
+
       &::after {
         background-color: white;
       }
