@@ -36,11 +36,14 @@ export default function Home() {
         overlaySrc={heroImageOverlaySrc}
         className="hero-image-container"
       />
-      <div className="button-center">
-        <Link to="/work">
-          <button className="general-button">Start Your Journey</button>
-        </Link>
-      </div>
+
+      <Link to="/work">
+        <button className="general-button button-center">
+          Start Your Journey
+        </button>
+      </Link>
+      <div className="mobile-journey-container"></div>
+
       <div className="blog-home">
         {posts.map((post, index) => (
           <div key={index} className="col-md-6">
