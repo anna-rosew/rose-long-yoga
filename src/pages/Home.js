@@ -5,6 +5,7 @@ import "../styles/Home.css";
 
 import BlogBlock from "../components/BlogBlock";
 import BlurryBackgroundImage from "../components/BlurryBackgroundImg";
+import "../styles/partials/_blog.scss";
 import "../styles/Blog.css";
 
 export default function Home() {
@@ -46,7 +47,7 @@ export default function Home() {
 
       <div className="blog-home">
         {posts.map((post, index) => (
-          <div key={index} className="col-md-6">
+          <div key={index} className="column">
             <BlogBlock postInfo={post} />
           </div>
         ))}

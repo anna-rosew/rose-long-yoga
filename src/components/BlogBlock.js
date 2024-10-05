@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../styles/Blog.css";
 import arrowIcon from "../styles/imgs/icons/blog-arrow.svg";
 
+import "../styles/partials/_blog.scss";
+
 export default function BlogBlock({ postInfo }) {
   const isInternal = postInfo.link.startsWith("/");
 

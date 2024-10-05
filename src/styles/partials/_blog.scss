@@ -1,0 +1,217 @@
+@import "./variables";
+@import "./mixins";
+
+.blog-page {
+  text-align: left;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  margin: 3em auto;
+  width: 100%;
+  padding: 0.6em;
+}
+
+.blog-heading {
+  text-align: left;
+}
+
+.blog-type-icon {
+  height: 3.1em;
+  position: absolute;
+  top: 1.25em;
+  right: 1.25em;
+}
+
+.blog-type-icon-block {
+  height: 2.5em;
+  display: inline-block;
+  padding-bottom: 1.25em;
+}
+
+.blog-arrow-icon {
+  height: 1.875em;
+  position: absolute;
+  bottom: 1.25em;
+  right: 1.25em;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.cover-post {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../imgs/photos/beach-cove.png") center/cover;
+  height: 31.25em;
+  width: 95%;
+  border-radius: 1.25em;
+  padding: 1.9em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.cover-content {
+  align-self: flex-start;
+  max-width: 70%;
+
+  h3 {
+    color: white;
+  }
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 3.13em;
+
+  button {
+    padding: 0.625em 1.25em;
+    font-size: 1em;
+    border-radius: 0.31em;
+    background-color: transparent;
+    font-family: $font-primary;
+    color: white;
+    border: 0.0625em solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  p {
+    border-top: 0.13em solid white;
+    margin-top: 0.63em;
+    padding: 0.63em;
+    line-height: 1.5;
+  }
+}
+
+.blog-block {
+  position: relative;
+  width: 90%;
+  height: 25em; 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25em; 
+  border-radius: 1.25em; 
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1.25em; 
+  }
+}
+
+.description {
+  display: block;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    border-top: 0.13em solid white; 
+    padding-top: 0.63em; 
+  }
+}
+
+.block-header {
+  margin: 5em 0 1.25em 0; 
+  padding-right: 2.5em; 
+
+  h3,
+  h2,
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 48em) {
+ 
+  .blog-page {
+    padding: 0;
+  }
+
+  .blog-heading {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .cover-post {
+    height: 19em; 
+    width: 80%;
+    padding: 1.9em; 
+    margin: 0 auto;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 0.63em;
+    margin-top: 0.63em auto;
+    padding: 0;
+  }
+
+  .blog-block {
+    width: 90%;
+    height: 12.5em;
+    padding: 1.25em;
+    margin: 0 auto;
+  }
+
+  .blog-type-icon-block {
+    height: 3.125em;
+    position: absolute;
+    top: 1.25em;
+    left: 0;
+  }
+}

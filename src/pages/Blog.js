@@ -88,4 +88,3 @@ export default function Blog() {
     </div>
   );
 }
-//      link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
