@@ -1,7 +1,7 @@
 // _layouts.scss
 
 .container {
-  margin: 12em;
+  margin: 0em 12em;
   padding: 0 2%;
   min-height: 100vh;
 
@@ -11,19 +11,33 @@
   }
 }
 
-.grid {
+.grid-2-columns {
   display: grid;
   grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4-columns {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-5-columns {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
-  &.grid-2-columns,
-  &.grid-3-columns,
-  &.grid-4-columns,
-  &.grid-5-columns {
-    grid-template-columns: repeat(2, 1fr); // Default for larger screens
-
-    @include respond-to(mobile) {
-      grid-template-columns: 1fr; // For mobile
-    }
+@media (max-width: 768px) {
+  .grid-2-columns,
+  .grid-3-columns,
+  .grid-4-columns,
+  .grid-5-columns {
+    grid-template-columns: 1fr; // For mobile responsiveness
   }
 }
 

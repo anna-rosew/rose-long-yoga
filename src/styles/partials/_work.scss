@@ -1,15 +1,25 @@
 @import "./variables";
 @import "./mixins";
 
+h1 {
+  text-align: center;
+}
+
 .intro {
   p {
     margin-bottom: 20px;
+    text-align: center;
   }
 }
 
 .work-cards {
   h2 {
+    text-align: center;
     margin-bottom: 10px;
+  }
+
+  h4 {
+    text-align: center;
   }
 
   @media (max-width: 768px) {
@@ -32,7 +42,12 @@
   z-index: 100;
 
   img {
+    width: 100%; /* Ensures the image fits the width of its container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images fill the container appropriately */
+    max-width: 100%;
     transition: filter 0.3s ease;
+    border-radius: $border-radius;
   }
 
   &:hover img {
@@ -58,11 +73,15 @@
     p {
       margin: 0;
       padding: 15px;
+      color: white;
     }
 
     .work-overlay-svg {
       margin: 0;
       width: 100px;
+    }
+    @include respond-to(mobile) {
+      display: none;
     }
   }
 

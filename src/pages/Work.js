@@ -22,7 +22,7 @@ export default function Work() {
         </p>
       </div>
       <div className="work-cards">
-        <div className="grid grid-3-columns">
+        <div className="grid-3-columns">
           <div className="card">
             <Link to="/approach" className="card-link">
               <h2>Approach</h2>
@@ -39,9 +39,7 @@ export default function Work() {
                     className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
-                  <p>
-                    <strong>Transform from the inside out.</strong>
-                  </p>
+                  <p>Transform from the inside out.</p>
                 </div>
               </div>
             </Link>
@@ -62,9 +60,7 @@ export default function Work() {
                     className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
-                  <p>
-                    <strong>Share in the power of the collective.</strong>
-                  </p>
+                  <p>Share in the power of the collective.</p>
                 </div>
               </div>
             </Link>
@@ -85,9 +81,7 @@ export default function Work() {
                     className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
-                  <p>
-                    <strong>The path of self discovery</strong>
-                  </p>
+                  <p>The path of self discovery.</p>
                 </div>
               </div>
             </Link>
