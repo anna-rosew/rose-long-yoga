@@ -12,11 +12,10 @@
 
 .blog-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5em;
-  margin: 3em auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 2em auto;
   width: 100%;
-  padding: 0.6em;
 }
 
 .blog-heading {
@@ -115,16 +114,20 @@
 .blog-block {
   position: relative;
   width: 90%;
-  height: 25em; 
+  height: 25em;
   background-size: cover;
   background-position: center;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25em; 
-  border-radius: 1.25em; 
+  padding: 1.25em;
+  border-radius: 1.25em;
   transition: transform 0.3s ease;
+
+  h2 {
+    color: white;
+  }
 
   &:hover {
     transform: scale(1.01);
@@ -138,7 +141,7 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-    border-radius: 1.25em; 
+    border-radius: 1.25em;
   }
 }
 
@@ -156,14 +159,14 @@
   }
 
   p {
-    border-top: 0.13em solid white; 
-    padding-top: 0.63em; 
+    border-top: 0.13em solid white;
+    padding-top: 0.63em;
   }
 }
 
 .block-header {
-  margin: 5em 0 1.25em 0; 
-  padding-right: 2.5em; 
+  margin: 5em 0 1.25em 0;
+  padding-right: 2.5em;
 
   h3,
   h2,
@@ -173,7 +176,6 @@
 }
 
 @media (max-width: 48em) {
- 
   .blog-page {
     padding: 0;
   }
@@ -184,9 +186,9 @@
   }
 
   .cover-post {
-    height: 19em; 
+    height: 19em;
     width: 80%;
-    padding: 1.9em; 
+    padding: 1.9em;
     margin: 0 auto;
   }
 

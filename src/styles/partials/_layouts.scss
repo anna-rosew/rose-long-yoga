@@ -1,9 +1,9 @@
 // _layouts.scss
 
 .container {
-  text-align: center;
-  margin: 50px 200px 0px 250px;
+  margin: 12em;
   padding: 0 2%;
+  min-height: 100vh;
 
   @include respond-to(mobile) {
     margin: 0 10px;

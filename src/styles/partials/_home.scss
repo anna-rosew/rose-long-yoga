@@ -2,27 +2,36 @@
 .Home {
   text-align: center;
 
+  @include respond-to(medium) {
+    height: 80vh;
+  }
+
   .home-header {
     margin: 0 auto;
 
     h3 {
       opacity: 70%;
       margin: 0;
-      font-size: 20px;
+      font-size: 1.25em;
     }
   }
 
   .hero-image-container {
     background-size: cover;
     background-position: center;
-    height: 450px;
-    padding-left: 350px;
-    margin: 10px 350px;
+    height: 28.13em;
+    padding-left: 21.88em;
+    margin: 0.63em 21.88em;
     border-radius: $border-radius;
 
     @include respond-to(mobile) {
-      height: 350px;
-      margin: 10px;
+      height: 21.88em;
+      margin: 0 0.63em;
+    }
+
+    @include respond-to(medium) {
+      height: 40em;
+      margin: 0 1.25em;
     }
   }
 
@@ -37,6 +46,7 @@
     padding-bottom: 56.25%;
     position: relative;
     width: 100%;
+
     @include respond-to(mobile) {
       display: block;
     }
@@ -44,10 +54,12 @@
 
   .blog-home {
     display: none;
+
     .column {
       width: 90vw;
-      margin-bottom: 20px;
+      margin-bottom: 1.25em;
     }
+
     @include respond-to(mobile) {
       display: flex;
       flex-direction: column;

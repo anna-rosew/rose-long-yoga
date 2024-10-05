@@ -1,7 +1,14 @@
 // _mixins.scss
+
+// Define your breakpoints as SCSS variables
 @mixin respond-to($size) {
   @if $size == mobile {
     @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (min-width: $mobile) and (max-width: 1024px) {
+      // Adjust max-width for medium screens
       @content;
     }
   }
