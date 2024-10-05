@@ -1,4 +1,8 @@
 // _about.scss
+
+@import "./variables";
+@import "./mixins";
+
 .About {
   h1 {
     text-align: left;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Work.css";
-import "../styles/App.css";
+import "../styles/partials/_work.scss";
+
 import MyApproach from "../styles/imgs/permanent/my-approach.png";
 import Groups from "../styles/imgs/permanent/groups.png";
 import OneToOnes from "../styles/imgs/permanent/one-to-one.png";

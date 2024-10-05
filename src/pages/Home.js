@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/App.css";
-import "../styles/Home.css";
+
+import "../styles/partials/_home.scss";
+import "../styles/partials/_blog.scss";
 
 import BlogBlock from "../components/BlogBlock";
 import BlurryBackgroundImage from "../components/BlurryBackgroundImg";
-import "../styles/partials/_blog.scss";
-import "../styles/Blog.css";
 
 export default function Home() {
   const posts = [
@@ -33,8 +32,7 @@ export default function Home() {
         <h1>Breath - Mind - Body</h1>
       </div>
 
-      <div className="mobile-hero">
-      </div>
+      <div className="mobile-hero"></div>
 
       <BlurryBackgroundImage
         src={heroImageSrc}
