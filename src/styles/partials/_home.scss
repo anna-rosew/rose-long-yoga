@@ -13,6 +13,7 @@
   }
 
   .hero-image-container {
+    display: flex;
     background-size: cover;
     background-position: center;
     height: 28.13em;
@@ -20,13 +21,33 @@
     border-radius: $border-radius;
 
     @include respond-to(mobile) {
+      display: none;
+    }
+
+    @include respond-to(medium) {
+      display: none;
+    }
+  }
+
+  .mobile-hero {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    height: 28.13em;
+    margin: 0.63em 21.88em;
+    border-radius: $border-radius;
+    background-image: url("../imgs/permanent/maze-hero.png");
+
+    @include respond-to(mobile) {
+      display: flex;
       height: 21.88em;
       margin: 0 0.63em;
     }
 
     @include respond-to(medium) {
-      height: 40em;
-      margin: 0 1.25em;
+      height: 25em;
+      margin: 0 0.63em;
+      display: block;
     }
   }
 

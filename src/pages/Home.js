@@ -32,6 +32,10 @@ export default function Home() {
       <div className="home-header">
         <h1>Breath - Mind - Body</h1>
       </div>
+
+      <div className="mobile-hero">
+      </div>
+
       <BlurryBackgroundImage
         src={heroImageSrc}
         overlaySrc={heroImageOverlaySrc}
