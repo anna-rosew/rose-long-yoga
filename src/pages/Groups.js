@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import OnlineGroupsSlider from "../components/OnlineGroupsSlider";
 
-import "../styles/App.css";
-import "../styles/Groups.css";
+import "../styles/partials/_work.scss";
 import Online from "../styles/imgs/permanent/online-groups-photo.png";
 import InPerson from "../styles/imgs/permanent/inPersonGroups.png";
 import Retreat from "../styles/imgs/permanent/retreats-photo.png";
