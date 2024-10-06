@@ -6,3 +6,341 @@ button {
   background-color: transparent;
   padding: 0;
 }
+
+@import "./variables";
+@import "./mixins";
+
+.section-spacing {
+  margin-top: 3.1em;
+  margin-bottom: 3.1em;
+}
+
+.online-groups-section {
+  margin-top: 1.875em; // 30px
+
+  @include respond-to(mobile) {
+    // Additional mobile-specific styles if needed
+  }
+}
+
+.yoga-image-container {
+  position: relative;
+  width: 11.25em; // 180px
+
+  @include respond-to(mobile) {
+    width: 100%; // Full width on mobile
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    width: 15em; // Example width for medium screens
+  }
+}
+
+.yoga-image {
+  width: 11.25em; // 180px
+  margin: 0 auto;
+}
+
+.class-details {
+  margin: 0;
+}
+
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+}
+
+.overlay-svg {
+  height: 5em; // 80px
+}
+
+.overlay-svg2 {
+  height: 2.1875em; // 35px
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.hr-lines:before {
+  content: " ";
+  display: block;
+  height: 0.06em; // 2px
+  width: 8.125em; // 130px
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 31.25em; // 500px
+  margin: 1.875em auto; // 30px
+  text-align: center;
+
+  &:after {
+    content: " ";
+    height: 0.06em; // 2px
+    width: 8.125em; // 130px
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.retreat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em; // 20px
+}
+
+.retreats {
+  margin-bottom: 1.25em; // 20px
+
+  @include respond-to(mobile) {
+    text-align: center; // Center text on mobile
+  }
+
+  @include respond-to(medium) {
+    // Adjust for medium screens if needed
+    text-align: left; // Example adjustment for medium screens
+  }
+}
+
+.retreat-img-container {
+  position: relative;
+  width: 36.875em; // 590px
+  height: 26.875em; // 430px
+
+  @include respond-to(mobile) {
+    width: 100%; // Full width on mobile
+    height: auto; // Adjust height
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    width: 30em; // Example width for medium screens
+  }
+}
+
+.retreat-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 7.9375em; // 127px
+
+  @include respond-to(mobile) {
+    border-radius: 3.5625em; // Adjust for mobile
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    border-radius: 5em; // Example adjustment for medium screens
+  }
+}
+
+.book-btn {
+  width: 80%;
+  margin-top: 1.25em; // 20px
+
+  @include respond-to(mobile) {
+    margin-top: 1em; // Adjust for mobile
+  }
+}
+
+.book-btn-two {
+  width: 80%;
+  margin-top: 2.8125em; // 45px
+
+  @include respond-to(mobile) {
+    margin-top: 1.25em; // Adjust for mobile
+  }
+
+  @include respond-to(medium) {
+    margin-top: 2em; // Example adjustment for medium screens
+  }
+}
+
+.retreat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 6.25em; // 100px
+  box-sizing: border-box;
+  border-radius: 7.9375em; // 127px
+
+  @include respond-to(mobile) {
+    padding: 3.125em; // Adjust for mobile
+    border-radius: 3.5625em; // Adjust for mobile
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    padding: 4em; // Example padding for medium screens
+    border-radius: 5em; // Example adjustment for medium screens
+  }
+}
+
+.retreat-img-container:hover .retreat-overlay {
+  opacity: 1;
+}
+
+.retreat-overlay h3,
+.retreat-overlay h2,
+.retreat-overlay p,
+.retreat-overlay span {
+  margin: 0.3125em 0; // 5px
+  color: white;
+}
+
+.retreat-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.retreat-overlay span img {
+  margin-right: 0.3125em; // 5px
+}
+
+.retreat-info-mobile {
+  display: none;
+
+  @include respond-to(mobile) {
+    display: block; // Show on mobile
+  }
+}
+
+.in-person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em; // 20px
+}
+
+.in-person-sessions {
+  margin-bottom: 1.25em; // 20px
+}
+
+.in-person-img-container {
+  position: relative;
+  width: 100%;
+  height: 26.875em; // 430px
+
+  @include respond-to(mobile) {
+    height: auto; // Adjust height
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    height: 30em; // Example height for medium screens
+  }
+}
+
+.in-person-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 1.4375em; // 23px
+
+  @include respond-to(mobile) {
+    border-radius: 1.25em; // Adjust for mobile
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    border-radius: 1.5em; // Example adjustment for medium screens
+  }
+}
+
+.in-person-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 6.25em; // 100px
+  box-sizing: border-box;
+  border-radius: 1.4375em; // 23px
+
+  @include respond-to(mobile) {
+    padding: 3.125em; // Adjust for mobile
+    border-radius: 1.25em; // Adjust for mobile
+  }
+
+  @include respond-to(medium) {
+    // Medium screen styles if needed
+    padding: 4em; // Example padding for medium screens
+    border-radius: 1.5em; // Example adjustment for medium screens
+  }
+}
+
+.in-person-img-container:hover .in-person-overlay {
+  opacity: 1;
+}
+
+.in-person-overlay h3,
+.in-person-overlay h2,
+.in-person-overlay p,
+.in-person-overlay span {
+  margin: 0.625em 0; // 10px
+  color: white;
+}
+
+.in-person-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.in-person-overlay span img {
+  margin-right: 0.3125em; // 5px
+}
+
+.in-person-overlay .overlay-svg,
+.in-person-overlay .overlay-svg2 {
+  width: 1.25em; // 20px
+  height: 1.25em; // 20px
+  margin-right: 0.3125em; // 5px
+}
+
+.in-person-info-mobile {
+  display: none;
+
+  @include respond-to(mobile) {
+    display: block; // Show on mobile
+  }
+}

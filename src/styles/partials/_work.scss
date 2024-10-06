@@ -20,9 +20,9 @@ h1 {
   z-index: 100;
 
   img {
-    width: 100%; /* Ensures the image fits the width of its container */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures images fill the container appropriately */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     max-width: 100%;
     transition: filter 0.3s ease;
     border-radius: $border-radius;
@@ -66,6 +66,11 @@ h1 {
   &:hover .work-overlay {
     opacity: 1;
   }
+}
+
+.section-spacing {
+  margin-top: 3.1em;
+  margin-bottom: 3.1em;
 }
 
 @media (max-width: 768px) {

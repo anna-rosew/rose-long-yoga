@@ -66,7 +66,7 @@ export default function Groups() {
               </div>
               <button
                 className="mobile-button general-button button-center button-wide"
-                onClick={onClick}
+                onClick={onClick2}
               >
                 Find Sessions
               </button>
@@ -85,7 +85,7 @@ export default function Groups() {
               </div>
               <button
                 className="mobile-button general-button button-center button-wide"
-                onClick={onClick}
+                onClick={onClick3}
               >
                 Find Details
               </button>
