@@ -1,7 +1,7 @@
 import React from "react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "../styles/ClassSlide.css";
+import "../styles/partials/_groups.scss";
 import { Link } from "react-router-dom";
 
 export default function ClassSlides({ classInfo }) {
@@ -13,7 +13,7 @@ export default function ClassSlides({ classInfo }) {
           alt={classInfo.classType}
           className="class-icon"
         />
-        <h1>{classInfo.classType}</h1>
+        <h2>{classInfo.classType}</h2>
       </div>
       <div className="class-description">
         <p>{classInfo.description}</p>
@@ -51,6 +51,9 @@ export default function ClassSlides({ classInfo }) {
               )}
             </ul>
           </div>
+          <Link to="/contact">
+            <button className="book-button button-wide">BOOK NOW</button>
+          </Link>
         </div>
         <div className="prices">
           <h3>Prices</h3>
@@ -75,9 +78,6 @@ export default function ClassSlides({ classInfo }) {
           </div>
         </div>
       </div>
-      <Link to="/contact">
-        <button className="book-button">BOOK NOW</button>
-      </Link>
     </div>
   );
 }
