@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import OnlineGroupsSlider from "../components/OnlineGroupsSlider";
 
 import "../styles/partials/_work.scss";
+import "../styles/partials/_groups.scss";
 import Online from "../styles/imgs/permanent/online-groups-photo.png";
 import InPerson from "../styles/imgs/permanent/inPersonGroups.png";
 import Retreat from "../styles/imgs/permanent/retreats-photo.png";
@@ -31,45 +32,63 @@ export default function Groups() {
         <h1>Groups.</h1>
       </div>
 
-      <div className="group-cards">
+      <div className="cards">
         <div className="grid grid-3-columns">
           <div className="card online-groups">
             <button onClick={onClick} className="card-links">
               <h2>Online Groups</h2>
               <h4>YOGA | COMMUNITY</h4>
-              <div className="group-image-container">
+              <div className="card-image-container">
                 <img
                   src={Online}
                   className="img-responsive"
                   alt="Online Groups - art by Lynn Hanford-Day"
                 />
               </div>
+              <button
+                className="mobile-button general-button button-center button-wide"
+                onClick={onClick}
+              >
+                Find Schedule
+              </button>
             </button>
           </div>
           <div className="card inperson-groups">
             <button onClick={onClick2} className="card-links">
               <h2>In-Person Sessions</h2>
               <h4>CLASSES | WORKSHOPS</h4>
-              <div className="group-image-container">
+              <div className="card-image-container">
                 <img
                   src={InPerson}
                   className="img-responsive"
                   alt="In-Person Classes & Groups - art by Lynn Hanford-Day"
                 />
               </div>
+              <button
+                className="mobile-button general-button button-center button-wide"
+                onClick={onClick}
+              >
+                Find Sessions
+              </button>
             </button>
           </div>
           <div className="card retreats">
             <button onClick={onClick3} className="card-links">
               <h2>Retreats</h2>
               <h4>JOURNEYS | GROWTH | EXPLORATION</h4>
-              <div className="group-image-container">
+              <div className="card-image-container">
                 <img
                   src={Retreat}
                   className="img-responsive"
                   alt="Retreats & Workshops - art by Lynn Hanford-Day"
                 />
               </div>
+              <button
+                className="mobile-button general-button button-center button-wide"
+                onClick={onClick}
+              >
+                Find Details
+              </button>
             </button>
           </div>
         </div>

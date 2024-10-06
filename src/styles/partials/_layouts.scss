@@ -1,4 +1,4 @@
-// _layouts.scss
+//_layouts.scss
 
 .container {
   margin: 0em 12em;
@@ -6,29 +6,29 @@
   min-height: 100vh;
 
   @include respond-to(mobile) {
-    margin: 0 10px;
+    margin: 0 0.625em;
     padding: 0;
   }
 }
 
 .grid-2-columns {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
   grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-4-columns {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-5-columns {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -37,13 +37,13 @@
   .grid-3-columns,
   .grid-4-columns,
   .grid-5-columns {
-    grid-template-columns: 1fr; // For mobile responsiveness
+    grid-template-columns: 1fr;
   }
 }
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -51,7 +51,7 @@
 
   @include respond-to(mobile) {
     padding-top: 56.25%;
-    margin: 10px;
+    margin: 0.625em;
     border-radius: 0;
 
     iframe {
@@ -63,33 +63,71 @@
 
 .text {
   text-align: left;
-  margin: 5px;
+  margin: 0.3125em;
   display: block;
 }
 
 .quote {
   color: #862b0d;
-  padding: 20px 30px;
+  padding: 1.25em 1.875em;
 }
 
 .grid-button-container {
-  margin-top: 30px;
+  margin-top: 1.875em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: flex-start;
   width: 100%;
   text-align: center;
 
-  // Media query for mobile responsiveness
   @include respond-to(mobile) {
-    gap: 20px;
+    gap: 1.25em;
     grid-template-columns: 1fr;
   }
 
-  // Ensure the buttons inside the grid take full width of the grid column
   .general-button {
     width: 70%;
   }
 }
 
+.cards {
+  margin-bottom: 1.25em;
+  h2 {
+    text-align: center;
+    margin-bottom: 0.625em;
+  }
 
+  h4 {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 1.25em;
+  }
+}
+
+.card .group-image-container:hover {
+  transform: scale(1.03);
+}
+.card-links {
+  text-decoration: none;
+  color: black;
+}
+
+.card h2 {
+  margin-bottom: 0.625em;
+  font-size: 2em;
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+.card-image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: $border-radius;
+}

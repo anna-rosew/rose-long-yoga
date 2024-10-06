@@ -21,7 +21,7 @@ export default function Work() {
           </strong>
         </p>
       </div>
-      <div className="work-cards">
+      <div className="cards">
         <div className="grid-3-columns">
           <div className="card">
             <Link to="/approach" className="card-link">

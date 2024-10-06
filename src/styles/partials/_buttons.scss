@@ -24,3 +24,14 @@ button:hover {
   display: block;
   margin: 30px auto;
 }
+
+.button-wide {
+  width: 100%;
+}
+
+.mobile-button {
+  display: none;
+  @include respond-to(mobile) {
+    display: block;
+  }
+}
