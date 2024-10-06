@@ -92,42 +92,38 @@
 
 .cards {
   margin-bottom: 1.25em;
-  h2 {
-    text-align: center;
-    margin-bottom: 0.625em;
-  }
 
   h4 {
     text-align: center;
   }
 
-  @media (max-width: 768px) {
-    margin: 0 1.25em;
+  .card .group-image-container:hover {
+    transform: scale(1.03);
   }
-}
+  .card-links {
+    text-decoration: none;
+    color: black;
+  }
 
-.card .group-image-container:hover {
-  transform: scale(1.03);
-}
-.card-links {
-  text-decoration: none;
-  color: black;
-}
+  .card-image-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+  }
+  .card-image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: $border-radius;
+  }
 
-.card h2 {
-  margin-bottom: 0.625em;
-  font-size: 2em;
-}
+  @include respond-to(mobile) {
+    margin: 0 1.25em;
 
-.card-image-container {
-  position: relative;
-  overflow: hidden;
-  z-index: 100;
-}
-.card-image-container img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  display: block;
-  border-radius: $border-radius;
+    .card h2 {
+      text-align: center;
+      margin: 0.1em;
+    }
+  }
 }

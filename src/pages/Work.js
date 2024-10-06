@@ -15,10 +15,9 @@ export default function Work() {
       <div className="intro">
         <h1>Work With Rose.</h1>
         <p>
-          <strong>
-            Come and explore how your body, mind and breath work together. Open
-            yourself to new dimensions of experience and personal growth.
-          </strong>
+          Come and explore how your{" "}
+          <strong>body, mind and breath work together.</strong> Open yourself to
+          new dimensions of experience and personal growth.
         </p>
       </div>
       <div className="cards">
