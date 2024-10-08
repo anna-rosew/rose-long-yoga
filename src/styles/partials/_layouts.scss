@@ -6,10 +6,11 @@
   flex-grow: 1;
 
   @include respond-to(mobile) {
-    padding: 0;
+    padding: 0 5%;
   }
 
   @include respond-to(medium) {
+    padding: 0 10%;
   }
 }
 
@@ -40,26 +41,6 @@
   .grid-4-columns,
   .grid-5-columns {
     grid-template-columns: 1fr;
-  }
-}
-
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  z-index: 900;
-
-  @include respond-to(mobile) {
-    padding-top: 56.25%;
-    margin: 0.625em;
-    border-radius: 0;
-
-    iframe {
-      border-radius: 0;
-      z-index: 999;
-    }
   }
 }
 
@@ -131,5 +112,8 @@
       text-align: center;
       margin: 0.1em;
     }
+  }
+
+  @include respond-to(medium) {
   }
 }

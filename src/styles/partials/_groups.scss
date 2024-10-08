@@ -25,20 +25,19 @@ button {
 
 .yoga-image-container {
   position: relative;
-  width: 11.25em; // 180px
+  width: 11.25em;
 
   @include respond-to(mobile) {
-    width: 100%; // Full width on mobile
+    width: 100%;
   }
 
   @include respond-to(medium) {
-    // Medium screen styles if needed
-    width: 15em; // Example width for medium screens
+    width: 15em;
   }
 }
 
 .yoga-image {
-  width: 11.25em; // 180px
+  width: 11.25em;
   margin: 0 auto;
 }
 
@@ -55,11 +54,11 @@ button {
 }
 
 .overlay-svg {
-  height: 5em; // 80px
+  height: 5em;
 }
 
 .overlay-svg2 {
-  height: 2.1875em; // 35px
+  height: 2.1875em;
 }
 
 .section-heading {
@@ -69,29 +68,43 @@ button {
 .hr-lines:before {
   content: " ";
   display: block;
-  height: 0.06em; // 2px
-  width: 8.125em; // 130px
+  height: 0.06em;
+  width: 8.125em;
   position: absolute;
   top: 50%;
   left: 0;
   background: black;
+  @include respond-to(mobile) {
+    width: 2em;
+  }
+
+  @include respond-to(medium) {
+    width: 5em;
+  }
 }
 
 .hr-lines {
   position: relative;
-  max-width: 31.25em; // 500px
-  margin: 1.875em auto; // 30px
+  max-width: 31.25em;
+  margin: 1.875em auto;
   text-align: center;
 
   &:after {
     content: " ";
-    height: 0.06em; // 2px
-    width: 8.125em; // 130px
+    height: 0.06em;
+    width: 8.125em;
     background: black;
     display: block;
     position: absolute;
     top: 50%;
     right: 0;
+    @include respond-to(mobile) {
+      width: 2em;
+    }
+
+    @include respond-to(medium) {
+      width: 7em;
+    }
   }
 }
 
@@ -101,19 +114,18 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.25em; // 20px
+  margin-bottom: 1.25em;
 }
 
 .retreats {
-  margin-bottom: 1.25em; // 20px
+  margin-bottom: 1.25em;
 
   @include respond-to(mobile) {
-    text-align: center; // Center text on mobile
+    text-align: center;
   }
 
   @include respond-to(medium) {
-    // Adjust for medium screens if needed
-    text-align: left; // Example adjustment for medium screens
+    text-align: left;
   }
 }
 
@@ -124,12 +136,11 @@ button {
 
   @include respond-to(mobile) {
     width: 100%; // Full width on mobile
-    height: auto; // Adjust height
+    height: auto;
   }
 
   @include respond-to(medium) {
-    // Medium screen styles if needed
-    width: 30em; // Example width for medium screens
+    width: 30em;
   }
 }
 
@@ -168,7 +179,7 @@ button {
   }
 
   @include respond-to(medium) {
-    margin-top: 2em; // Example adjustment for medium screens
+    margin-top: 2em;
   }
 }
 
@@ -238,25 +249,24 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.25em; // 20px
+  margin-bottom: 1.25em;
 }
 
 .in-person-sessions {
-  margin-bottom: 1.25em; // 20px
+  margin-bottom: 1.25em;
 }
 
 .in-person-img-container {
   position: relative;
   width: 100%;
-  height: 26.875em; // 430px
+  height: 26.875em;
 
   @include respond-to(mobile) {
-    height: auto; // Adjust height
+    height: auto;
   }
 
   @include respond-to(medium) {
-    // Medium screen styles if needed
-    height: 30em; // Example height for medium screens
+    height: 30em;
   }
 }
 
@@ -265,15 +275,14 @@ button {
   object-fit: cover;
   height: 100%;
   display: block;
-  border-radius: 1.4375em; // 23px
+  border-radius: 1.4375em;
 
   @include respond-to(mobile) {
-    border-radius: 1.25em; // Adjust for mobile
+    border-radius: 1.25em;
   }
 
   @include respond-to(medium) {
-    // Medium screen styles if needed
-    border-radius: 1.5em; // Example adjustment for medium screens
+    border-radius: 1.5em;
   }
 }
 
@@ -292,19 +301,18 @@ button {
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
-  padding: 6.25em; // 100px
+  padding: 6.25em;
   box-sizing: border-box;
-  border-radius: 1.4375em; // 23px
+  border-radius: 1.4375em;
 
   @include respond-to(mobile) {
-    padding: 3.125em; // Adjust for mobile
-    border-radius: 1.25em; // Adjust for mobile
+    padding: 3.125em;
+    border-radius: 1.25em;
   }
 
   @include respond-to(medium) {
-    // Medium screen styles if needed
-    padding: 4em; // Example padding for medium screens
-    border-radius: 1.5em; // Example adjustment for medium screens
+    padding: 4em;
+    border-radius: 1.5em;
   }
 }
 
@@ -316,7 +324,7 @@ button {
 .in-person-overlay h2,
 .in-person-overlay p,
 .in-person-overlay span {
-  margin: 0.625em 0; // 10px
+  margin: 0.625em 0;
   color: white;
 }
 
@@ -326,21 +334,21 @@ button {
 }
 
 .in-person-overlay span img {
-  margin-right: 0.3125em; // 5px
+  margin-right: 0.3125em;
 }
 
 .in-person-overlay .overlay-svg,
 .in-person-overlay .overlay-svg2 {
-  width: 1.25em; // 20px
-  height: 1.25em; // 20px
-  margin-right: 0.3125em; // 5px
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.3125em;
 }
 
 .in-person-info-mobile {
   display: none;
 
   @include respond-to(mobile) {
-    display: block; // Show on mobile
+    display: block;
   }
 }
 
@@ -563,6 +571,14 @@ ul {
   pointer-events: none;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+
+  @include respond-to(mobile) {
+    padding: 0.5em 0em;
+  }
+
+  @include respond-to(medium) {
+    padding: 0.5em 0em;
+  }
 }
 
 .custom-bullet {
@@ -581,10 +597,13 @@ ul {
   background: transparent;
 
   @include respond-to(mobile) {
-    padding: 2.5em 0.625em 4em 0.625em;
+    padding: 2em 0.625em 3.5em 0.625em;
+    font-size: 0.5em;
   }
 
   @include respond-to(medium) {
+    padding: 2.5em 0.625em 4em 0.625em;
+    font-size: 1em;
   }
 }
 
