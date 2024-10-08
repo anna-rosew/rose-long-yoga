@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../styles/InPerson.css";
+import "../styles/partials/_in-person.scss";
 import { Pagination, Navigation } from "swiper/modules";
 import EventSlider from "../components/InPersonSlider";
 import prevArrow from "../styles/imgs/icons/arrow-prev.svg";
