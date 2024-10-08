@@ -6,8 +6,6 @@ import "swiper/css/navigation";
 import "../styles/partials/_in-person.scss";
 import { Pagination, Navigation } from "swiper/modules";
 import EventSlider from "../components/InPersonSlider";
-import prevArrow from "../styles/imgs/icons/arrow-prev.svg";
-import nextArrow from "../styles/imgs/icons/arrow-next.svg";
 
 export default function InPerson() {
   const events = [
@@ -63,18 +61,9 @@ export default function InPerson() {
       <div className="container in-person-page">
         <h1>In-Person Sessions</h1>
         <h4>YOGA | COMMUNITY</h4>
-        <div className="event-swiper-button-prev">
-          <img src={prevArrow} alt="prev arrow" className="nav-arrow" />
-        </div>
-        <div className="event-swiper-button-next">
-          <img src={nextArrow} alt="next arrow" className="nav-arrow" />
-        </div>
         <Swiper
           pagination={{ clickable: true }}
-          navigation={{
-            nextEl: ".event-swiper-button-next",
-            prevEl: ".event-swiper-button-prev",
-          }}
+          navigation={true} // Use the default navigation
           modules={[Pagination, Navigation]}
           className="event-swiper"
         >

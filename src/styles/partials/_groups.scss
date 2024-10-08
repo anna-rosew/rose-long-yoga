@@ -1,12 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-button {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
 .yoga-image-container {
   position: relative;
   width: 11.25em;
@@ -100,10 +94,6 @@ button {
   }
 }
 
-.general-button {
-  margin: 1em 0em;
-}
-
 /* --------------------- Online Groups  ---------------------*/
 
 //Slides
@@ -129,7 +119,7 @@ button {
 
   h2 {
     font-family: $font-primary;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-transform: uppercase;
 
     @include respond-to(mobile) {
@@ -155,7 +145,7 @@ button {
     }
 
     @include respond-to(medium) {
-      font-size: 1.5em;
+      font-size: 1.25em;
     }
   }
 }
@@ -493,6 +483,7 @@ ul {
   .in-person-overlay span {
     margin: 0.2em 0;
     color: white;
+    text-align: left;
   }
 
   .in-person-overlay span {

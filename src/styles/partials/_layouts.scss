@@ -72,6 +72,12 @@
   }
 }
 
+.card {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .cards {
   margin-bottom: 1.25em;
   text-align: center;
@@ -89,6 +95,8 @@
   .card-links {
     text-decoration: none;
     color: black;
+    background-color: transparent;
+    border: none;
   }
 
   .card-image-container {

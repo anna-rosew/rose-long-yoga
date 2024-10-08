@@ -67,7 +67,7 @@ export default function Blog() {
                 >
                   LISTEN
                 </button>
-                <p className="description">
+                <p className="blog-description">
                   Explore Rose Long's remarkable journey of profound
                   transformation and alignment with the earth's rhythm on the
                   Mind Over Matter Podcast, where her story serves as a beacon

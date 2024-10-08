@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
 import Time from "../styles/imgs/icons/time.svg";
-import "../styles/InPerson.css";
+import "../styles/partials/_in-person.scss";
 import BlurryImage from "../components/BlurryImage";
 
 const formatDescription = (text) => {
@@ -18,6 +18,7 @@ const InPersonSlider = ({ eventInfo }) => {
     <div className="event-slide">
       <div className="event-container">
         <div className="image-gallery">
+          {/* Only show the large image on mobile and both on desktop */}
           <div className="large-image-container">
             <BlurryImage
               src={eventInfo.images[0]}
@@ -25,6 +26,7 @@ const InPersonSlider = ({ eventInfo }) => {
               alt="Large Event"
             />
           </div>
+          {/* Only show small images on non-mobile devices */}
           {!isMobile && (
             <div className="small-images-container">
               {eventInfo.images.slice(1).map((img, index) => (
@@ -68,13 +70,13 @@ const InPersonSlider = ({ eventInfo }) => {
             </span>
           </p>
           <p
-            className="description"
+            className="class-description"
             dangerouslySetInnerHTML={{
               __html: formatDescription(eventInfo.description),
             }}
           />
           <p
-            className="description"
+            className="class-description-two"
             dangerouslySetInnerHTML={{
               __html: formatDescription(eventInfo.description2),
             }}
@@ -89,11 +91,11 @@ const InPersonSlider = ({ eventInfo }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="general-button">BOOK NOW</button>
+              <button className="book-button">BOOK NOW</button>
             </a>
           ) : (
             <Link to={eventInfo.bookNowUrl}>
-              <button className="general-button">BOOK NOW</button>
+              <button className="book-button">BOOK NOW</button>
             </Link>
           )}
         </div>

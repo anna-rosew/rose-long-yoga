@@ -22,35 +22,21 @@ h4 {
 
 .event-swiper {
   position: relative;
+  padding-bottom: 3.12em;
 
-  .event-swiper-button-next,
-  .event-swiper-button-prev {
-    position: absolute;
-    top: 50%; /* Align vertically to the middle */
-    transform: translateY(-50%); /* Center vertically */
-    width: 2.75em;
-    height: 2.75em;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    cursor: pointer;
+  .swiper-pagination-bullet-active {
+    background-color: #356d65;
+    opacity: 1;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black; // Change arrow color
+    width: 2em; // Adjust arrow size if necessary
+    height: 2em;
 
-    /* Make sure the image is positioned inside */
-    img.nav-arrow {
-      width: 100%;
-      height: auto;
-      display: block;
+    &:after {
+      font-size: 2em; // Change arrow icon size if using FontAwesome or similar
     }
-  }
-
-  .event-swiper-button-next {
-    right: -1.5em; /* Move closer horizontally */
-  }
-
-  .event-swiper-button-prev {
-    left: -1.5em; /* Move closer horizontally */
   }
 }
 
@@ -59,7 +45,7 @@ h4 {
   align-items: center;
 }
 
-.description {
+.class-description {
   list-style: none;
   padding: 0;
 
@@ -105,7 +91,7 @@ h4 {
   .large-image-container {
     border-radius: 1.87em;
     overflow: hidden;
-    height: 31.25em;
+    height: 20em;
   }
 
   .large-image {
@@ -123,7 +109,7 @@ h4 {
   .small-image {
     border-radius: 1.87em;
     width: 100%;
-    height: 15.31em;
+    height: 9.6em;
     object-fit: cover;
   }
 }
@@ -136,6 +122,10 @@ h4 {
   h2,
   p {
     text-align: left;
+  }
+
+  h2 {
+    margin: 0.2em 0 0.2em 0;
   }
 }
 
@@ -172,28 +162,33 @@ h4 {
     }
   }
 
-  .event-swiper-button-next,
-  .event-swiper-button-prev {
-    width: 1.25em !important;
-    height: 1.25em !important;
-  }
-
   .event-swiper {
-    padding-bottom: 4.37em;
+    position: relative;
 
-    .event-swiper-button-next {
-      right: 1.25em;
-      left: auto;
+    padding-bottom: 3.12em;
+
+    .swiper-pagination-bullet-active {
+      background-color: #356d65;
+      opacity: 1;
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black; // Change arrow color
+      width: 2em; // Adjust arrow size if necessary
+      height: 2em;
 
-    .event-swiper-button-prev {
-      left: 1.25em;
-      right: auto;
+      &:after {
+        font-size: 2em; // Change arrow icon size if using FontAwesome or similar
+      }
     }
   }
 }
 
 @include respond-to(mobile) {
+  h1 {
+    margin: 0;
+  }
+
   .event-container {
     flex-direction: column;
   }
@@ -206,8 +201,9 @@ h4 {
     grid-template-columns: 1fr;
 
     .large-image-container {
-      width: 100%;
+      width: 85%;
       height: 12.5em;
+      margin: 0 auto;
     }
 
     .small-images-container {
@@ -215,23 +211,28 @@ h4 {
     }
   }
 
-  .event-swiper-button-next,
-  .event-swiper-button-prev {
-    width: 1.25em !important;
-    height: 1.25em !important;
+  .class-description-two {
+    display: none;
   }
 
   .event-swiper {
-    padding-bottom: 4.37em;
+    position: relative;
+    padding: 0 0em 1em 0em;
 
-    .event-swiper-button-next {
-      right: 1.25em;
-      left: auto;
+    .swiper-pagination-bullet-active {
+      background-color: #356d65;
+      opacity: 1;
+    }
+    .swiper-button-next {
+      right: 0.2em;
+      top: 15%;
+      transform: translateY(-50%);
     }
 
-    .event-swiper-button-prev {
-      left: 1.25em;
-      right: auto;
+    .swiper-button-prev {
+      left: 0.2em;
+      top: 15%;
+      transform: translateY(-50%);
     }
   }
 }
