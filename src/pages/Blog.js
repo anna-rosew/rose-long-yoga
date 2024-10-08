@@ -1,6 +1,8 @@
 import React from "react";
-import "../styles/Blog.css";
+
+import "../styles/partials/_blog.scss";
 import video from "../styles/imgs/icons/video-icon.svg";
+
 import BlogBlock from "../components/BlogBlock";
 
 export default function Blog() {
@@ -56,7 +58,7 @@ export default function Blog() {
             <div className="cover-content">
               <img src={video} className="blog-type-icon" alt="Youtube Video" />
               <h3>MIND OVER MATTER: EPISODE 4</h3>
-              <h1>Life Changes with Rose Long.</h1>
+              <h2>Life Changes with Rose Long.</h2>
               <h3 className="date">05/24</h3>
               <div className="bottom-grid">
                 <button
@@ -77,7 +79,7 @@ export default function Blog() {
             </div>
           </div>
         </a>
-        <div className="grid blog-grid">
+        <div className="blog-grid">
           {posts.map((post, index) => (
             <div key={index} className="col-md-6">
               <BlogBlock postInfo={post} />

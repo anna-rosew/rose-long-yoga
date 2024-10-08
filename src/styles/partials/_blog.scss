@@ -1,12 +1,32 @@
+//_blog.scss
+
 @import "./variables";
 @import "./mixins";
+
+/* --------------------- Blog Page ---------------------*/
 
 .blog-page {
   text-align: left;
 
   a {
     text-decoration: none;
+  }
+
+  h2,
+  h3,
+  h4,
+  p,
+  a {
     color: white;
+    text-align: left;
+  }
+  @include respond-to(mobile) {
+    h2 {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -17,15 +37,31 @@
   margin: 3em auto;
   width: 100%;
   padding: 0.6em;
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+    gap: 0.63em;
+    margin-top: 0.63em auto;
+    padding: 0;
+  }
 }
 
 .blog-heading {
   text-align: left;
+
+  @include respond-to(mobile) {
+    padding-left: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
 
 .blog-type-icon {
   height: 3.1em;
-  position: absolute;
+  display: inline-block;
   top: 1.25em;
   right: 1.25em;
 }
@@ -34,6 +70,13 @@
   height: 2.5em;
   display: inline-block;
   padding-bottom: 1.25em;
+
+  @include respond-to(mobile) {
+    height: 3.125em;
+    display: inline-block;
+    top: 1.25em;
+    left: 0;
+  }
 }
 
 .blog-arrow-icon {
@@ -65,6 +108,13 @@
 
   &:hover {
     transform: scale(1.01);
+  }
+
+  @include respond-to(mobile) {
+    height: 19em;
+    width: 80%;
+    padding: 1.9em;
+    margin: 0 auto;
   }
 }
 
@@ -112,6 +162,8 @@
   }
 }
 
+/* --------------------- Blog Block ---------------------*/
+
 .blog-block {
   position: relative;
   width: 90%;
@@ -122,7 +174,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25em;
+  padding: 1.5em;
   border-radius: 1.25em;
   transition: transform 0.3s ease;
 
@@ -144,10 +196,21 @@
     background: rgba(0, 0, 0, 0.3);
     border-radius: 1.25em;
   }
+
+  @include respond-to(mobile) {
+    width: 90%;
+    height: 12.5em;
+    padding: 4em 1em;
+    margin: 0 auto;
+  }
 }
 
 .blog-description {
   display: block;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
 }
 
 .overlay {
@@ -166,7 +229,7 @@
 }
 
 .block-header {
-  margin: 5em 0 1.25em 0;
+  margin: 3em 0 1.25em 0;
   padding-right: 2.5em;
 
   h3,
@@ -176,45 +239,8 @@
   }
 }
 
-@media (max-width: 48em) {
+@include respond-to(mobile) {
   .blog-page {
     padding: 0;
-  }
-
-  .blog-heading {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .cover-post {
-    height: 19em;
-    width: 80%;
-    padding: 1.9em;
-    margin: 0 auto;
-  }
-
-  .blog-description {
-    display: none;
-  }
-
-  .blog-grid {
-    grid-template-columns: 1fr;
-    gap: 0.63em;
-    margin-top: 0.63em auto;
-    padding: 0;
-  }
-
-  .blog-block {
-    width: 90%;
-    height: 12.5em;
-    padding: 1.25em;
-    margin: 0 auto;
-  }
-
-  .blog-type-icon-block {
-    height: 3.125em;
-    position: absolute;
-    top: 1.25em;
-    left: 0;
   }
 }

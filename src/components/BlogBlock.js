@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Blog.css";
+
+import "../styles/partials/_blog.scss";
 import arrowIcon from "../styles/imgs/icons/blog-arrow.svg";
 
 import "../styles/partials/_blog.scss";
@@ -20,11 +21,11 @@ export default function BlogBlock({ postInfo }) {
             className="blog-type-icon-block"
             alt={postInfo.postType}
           />
-          <h3>{postInfo.subtitle}</h3>
+          <h4>{postInfo.subtitle}</h4>
           <h2>{postInfo.title}</h2>
         </div>
         <div className="block-content">
-          <p className="description">{postInfo.description}</p>
+          <p className="blog-description">{postInfo.description}</p>
           <h3 className="date">{postInfo.date}</h3>
         </div>
         {isInternal ? (

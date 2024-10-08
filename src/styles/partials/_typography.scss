@@ -49,6 +49,9 @@ a {
 @include respond-to(mobile) {
   h1 {
     font-size: 2em;
+    h1 {
+      margin: 0.6em;
+    }
   }
 
   h2 {
@@ -71,6 +74,9 @@ a {
 @include respond-to(medium) {
   h1 {
     font-size: 2.2rem;
+    h1 {
+      margin: 0.6em;
+    }
   }
 
   h2 {

@@ -30,12 +30,12 @@ h4 {
   }
   .swiper-button-next,
   .swiper-button-prev {
-    color: black; // Change arrow color
-    width: 2em; // Adjust arrow size if necessary
+    color: black;
+    width: 2em;
     height: 2em;
 
     &:after {
-      font-size: 2em; // Change arrow icon size if using FontAwesome or similar
+      font-size: 2em;
     }
   }
 }
@@ -141,9 +141,7 @@ h4 {
 }
 
 @include respond-to(medium) {
-  h1 {
-    margin: 0.5em;
-  }
+  
 
   .image-gallery {
     width: 95%;
@@ -180,9 +178,6 @@ h4 {
 }
 
 @include respond-to(mobile) {
-  h1 {
-    margin: 0;
-  }
 
   .event-container {
     flex-direction: column;
