@@ -5,9 +5,9 @@ import Logo from "../styles/imgs/icons/logo_white.svg";
 import InstaIcon from "../styles/imgs/icons/insta-footer.svg";
 import VimeoIcon from "../styles/imgs/icons/footer-vimeo.svg";
 
-export default function CreditsFooter() {
+export default function Footer() {
   return (
-    <div className="credits-footer">
+    <div className="footer">
       <div className="footer-grid">
         <div className="logo-footer">
           <div className="center">

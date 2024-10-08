@@ -26,7 +26,7 @@ import HiddenTreasureArticle from "./pages/BlogPosts/HiddenTreasure";
 import LynnInterview from "./pages/BlogPosts/LynnInterview";
 
 import NavBar from "./components/Nav/NavBar";
-import CreditsFooter from "./components/CreditsFooter";
+import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
         <Route path="/hiddenarticle" element={<HiddenTreasureArticle />} />
         <Route path="/lynninterview" element={<LynnInterview />} />
       </Routes>{" "}
-      <CreditsFooter />
+      <Footer />
     </div>
   );
 }
