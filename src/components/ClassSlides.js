@@ -53,7 +53,7 @@ export default function ClassSlides({ classInfo }) {
               </ul>
             </div>
           </div>
-          <Link to="/contact">
+          <Link to="/contact" className="desktop-button">
             <button className="book-button">BOOK NOW</button>
           </Link>
         </div>
@@ -81,6 +81,9 @@ export default function ClassSlides({ classInfo }) {
           </div>
         </div>
       </div>
+      <Link to="/contact" className="mobile-button">
+        <button className="book-button">BOOK NOW</button>
+      </Link>
     </div>
   );
 }

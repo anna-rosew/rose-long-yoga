@@ -29,7 +29,7 @@ export default function Work() {
               <div className="work-image-container">
                 <BlurryImage
                   src={MyApproach}
-                  className="img-responsive img-hover"
+                  className="img-responsive"
                   alt="My Approach - 'Torus in acrylics': painting by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
@@ -50,7 +50,7 @@ export default function Work() {
               <div className="work-image-container">
                 <BlurryImage
                   src={Groups}
-                  className="img-responsive img-hover"
+                  className="img-responsive"
                   alt="Group - 'Chinese Year of the Water Rabbit': painting by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
@@ -71,7 +71,7 @@ export default function Work() {
               <div className="work-image-container">
                 <BlurryImage
                   src={OneToOnes}
-                  className="img-responsive img-hover"
+                  className="img-responsive"
                   alt="One-To-Ones - 'The Lotfollah Dome': painting by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">

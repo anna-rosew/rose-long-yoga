@@ -37,6 +37,13 @@ button:hover {
   width: 100%;
 }
 
+.desktop-button {
+  display: block;
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
 .mobile-button {
   display: none;
   @include respond-to(mobile) {

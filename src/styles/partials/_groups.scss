@@ -7,9 +7,6 @@ button {
   padding: 0;
 }
 
-@import "./variables";
-@import "./mixins";
-
 .yoga-image-container {
   position: relative;
   width: 11.25em;
@@ -105,262 +102,6 @@ button {
 
 .general-button {
   margin: 1em 0em;
-}
-
-/* ---------------------Retreats---------------------*/
-
-.retreat-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em;
-}
-
-.retreats {
-  margin-bottom: 1.25em;
-
-  @include respond-to(mobile) {
-    text-align: center;
-  }
-
-  @include respond-to(medium) {
-    text-align: left;
-  }
-}
-
-.retreat-img-container {
-  position: relative;
-  width: 36.875em; // 590px
-  height: 26.875em; // 430px
-
-  @include respond-to(mobile) {
-    width: 100%; // Full width on mobile
-    height: auto;
-  }
-
-  @include respond-to(medium) {
-    width: 30em;
-  }
-}
-
-.retreat-image {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  display: block;
-  border-radius: 7.9375em; // 127px
-
-  @include respond-to(mobile) {
-    border-radius: 3.5625em; // Adjust for mobile
-  }
-
-  @include respond-to(medium) {
-    // Medium screen styles if needed
-    border-radius: 5em; // Example adjustment for medium screens
-  }
-}
-
-.book-btn {
-  width: 80%;
-  margin-top: 1.25em; // 20px
-
-  @include respond-to(mobile) {
-    margin-top: 1em; // Adjust for mobile
-  }
-}
-
-.book-btn-two {
-  width: 80%;
-  margin-top: 2.8125em; // 45px
-
-  @include respond-to(mobile) {
-    margin-top: 1.25em; // Adjust for mobile
-  }
-
-  @include respond-to(medium) {
-    margin-top: 2em;
-  }
-}
-
-.retreat-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #356d65;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-  padding: 6.25em; // 100px
-  box-sizing: border-box;
-  border-radius: 7.9375em; // 127px
-
-  @include respond-to(mobile) {
-    padding: 3.125em; // Adjust for mobile
-    border-radius: 3.5625em; // Adjust for mobile
-  }
-
-  @include respond-to(medium) {
-    // Medium screen styles if needed
-    padding: 4em; // Example padding for medium screens
-    border-radius: 5em; // Example adjustment for medium screens
-  }
-}
-
-.retreat-img-container:hover .retreat-overlay {
-  opacity: 1;
-}
-
-.retreat-overlay h3,
-.retreat-overlay h2,
-.retreat-overlay p,
-.retreat-overlay span {
-  margin: 0.3125em 0; // 5px
-  color: white;
-}
-
-.retreat-overlay span {
-  display: flex;
-  align-items: center;
-}
-
-.retreat-overlay span img {
-  margin-right: 0.3125em; // 5px
-}
-
-.retreat-info-mobile {
-  display: none;
-
-  @include respond-to(mobile) {
-    display: block; // Show on mobile
-  }
-}
-
-/* --------------------- In-Person Sessions ---------------------*/
-
-.in-person-info-mobile span {
-  display: flex;
-  align-items: center;
-  margin: 0.625em 0;
-}
-
-.in-person-info-mobile span img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 0.625em;
-}
-
-.in-person-info-mobile {
-  display: none;
-
-  @include respond-to(mobile) {
-    display: block;
-  }
-}
-
-.in-person-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em;
-}
-
-.in-person-sessions {
-  margin-bottom: 1.25em;
-}
-
-.in-person-img-container {
-  position: relative;
-  width: 100%;
-  height: 26.875em;
-
-  @include respond-to(mobile) {
-    height: auto;
-  }
-
-  @include respond-to(medium) {
-    height: 30em;
-  }
-}
-
-.in-person-image {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  display: block;
-  border-radius: 1.4375em;
-
-  @include respond-to(mobile) {
-    border-radius: 1.25em;
-  }
-
-  @include respond-to(medium) {
-    border-radius: 1.5em;
-  }
-}
-
-.in-person-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #356d65;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-  padding: 6.25em;
-  box-sizing: border-box;
-  border-radius: 1.4375em;
-
-  @include respond-to(mobile) {
-    padding: 3.125em;
-    border-radius: 1.25em;
-  }
-
-  @include respond-to(medium) {
-    padding: 4em;
-    border-radius: 1.5em;
-  }
-}
-
-.in-person-img-container:hover .in-person-overlay {
-  opacity: 1;
-}
-
-.in-person-overlay h3,
-.in-person-overlay h2,
-.in-person-overlay p,
-.in-person-overlay span {
-  margin: 0.625em 0;
-  color: white;
-}
-
-.in-person-overlay span {
-  display: flex;
-  align-items: center;
-}
-
-.in-person-overlay span img {
-  margin-right: 0.3125em;
-}
-
-.in-person-overlay .overlay-svg,
-.in-person-overlay .overlay-svg2 {
-  width: 1.25em;
-  height: 1.25em;
-  margin-right: 0.3125em;
 }
 
 /* --------------------- Online Groups  ---------------------*/
@@ -634,4 +375,280 @@ ul {
 
 .swiper-pagination-bullet-active.custom-bullet {
   border: 0.125em solid #000;
+}
+
+/* --------------------- In-Person Sessions ---------------------*/
+
+.in-person-sessions {
+  margin-bottom: 1.25em;
+
+  .grid-2-columns {
+    @include respond-to(medium) {
+      display: block;
+      grid-template-columns: 1fr;
+    }
+  }
+  .in-person-info-mobile span {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .in-person-info-mobile span img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.625em;
+  }
+
+  .in-person-info-mobile {
+    display: none;
+
+    @include respond-to(mobile) {
+      display: block;
+    }
+
+    @include respond-to(medium) {
+      display: block;
+    }
+  }
+
+  .in-person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25em;
+    @include respond-to(medium) {
+      display: grid;
+      grid-gap: 1.25em;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .in-person-img-container {
+    position: relative;
+    width: 100%;
+    height: 26.875em;
+
+    @include respond-to(mobile) {
+      height: auto;
+    }
+
+    @include respond-to(medium) {
+      height: 30em;
+    }
+  }
+
+  .in-person-image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 1.4375em;
+
+    @include respond-to(mobile) {
+      border-radius: 1.25em;
+    }
+
+    @include respond-to(medium) {
+      border-radius: 1.5em;
+    }
+  }
+
+  .in-person-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #356d65;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 6.25em;
+    box-sizing: border-box;
+    border-radius: 1.4375em;
+
+    @include respond-to(mobile) {
+      display: none;
+    }
+
+    @include respond-to(medium) {
+      padding: 4em;
+      border-radius: 1.5em;
+    }
+  }
+
+  .in-person-img-container:hover .in-person-overlay {
+    opacity: 1;
+  }
+
+  .in-person-overlay h3,
+  .in-person-overlay h2,
+  .in-person-overlay p,
+  .in-person-overlay span {
+    margin: 0.625em 0;
+    color: white;
+  }
+
+  .in-person-overlay span {
+    display: flex;
+    align-items: center;
+  }
+
+  .in-person-overlay span img {
+    margin-right: 0.3125em;
+  }
+
+  .in-person-overlay .overlay-svg,
+  .in-person-overlay .overlay-svg2 {
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.3125em;
+  }
+}
+
+/* ---------------------Retreats---------------------*/
+
+.retreat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em;
+}
+
+.retreats {
+  margin-bottom: 1.25em;
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    color: black;
+  }
+
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+
+  @include respond-to(medium) {
+    text-align: left;
+  }
+}
+
+.retreat-img-container {
+  position: relative;
+  width: 36.875em;
+  height: 26.875em;
+
+  @include respond-to(mobile) {
+    width: 100%;
+    height: auto;
+  }
+
+  @include respond-to(medium) {
+    width: 30em;
+  }
+}
+
+.retreat-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 7.9375em;
+
+  @include respond-to(mobile) {
+    border-radius: 3.5625em;
+  }
+
+  @include respond-to(medium) {
+    border-radius: 5em;
+  }
+}
+
+.book-btn {
+  width: 80%;
+  margin-top: 1.25em;
+
+  @include respond-to(mobile) {
+    margin-top: 1em;
+  }
+}
+
+.book-btn-two {
+  width: 80%;
+  margin-top: 2.8125em;
+
+  @include respond-to(mobile) {
+    margin-top: 1.25em;
+  }
+
+  @include respond-to(medium) {
+    margin-top: 2em;
+  }
+}
+
+.retreat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 6.25em;
+  box-sizing: border-box;
+  border-radius: 7.9375em;
+
+  @include respond-to(mobile) {
+    padding: 3.125em;
+    border-radius: 3.5625em;
+  }
+
+  @include respond-to(medium) {
+    padding: 4em;
+    border-radius: 5em;
+  }
+}
+
+.retreat-img-container:hover .retreat-overlay {
+  opacity: 1;
+}
+
+.retreat-overlay h3,
+.retreat-overlay h2,
+.retreat-overlay p,
+.retreat-overlay span {
+  margin: 0.3125em 0;
+  color: white;
+}
+
+.retreat-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.retreat-overlay span img {
+  margin-right: 0.3125em;
+}
+
+.retreat-info-mobile {
+  display: none;
+
+  @include respond-to(mobile) {
+    display: block;
+  }
 }
