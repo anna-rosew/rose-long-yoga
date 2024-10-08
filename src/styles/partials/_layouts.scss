@@ -1,20 +1,15 @@
 //_layouts.scss
 
 .container {
-  margin: 0em 12em;
-  padding: 0 2%;
-  width: 100%;
-  max-width: 100%;
+  padding: 0 15%;
   min-height: 100vh;
   flex-grow: 1;
 
   @include respond-to(mobile) {
-    margin: 0 0.625em;
     padding: 0;
   }
 
   @include respond-to(medium) {
-    margin: 0 0.625em;
   }
 }
 
