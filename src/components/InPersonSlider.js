@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
@@ -11,14 +11,30 @@ const formatDescription = (text) => {
 };
 
 const InPersonSlider = ({ eventInfo }) => {
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+    setIsMobile(width <= 768);
+    setIsMediumScreen(width > 768 && width <= 1024);
+  };
+
+  useEffect(() => {
+    handleResize(); // Check initial screen size
+    window.addEventListener("resize", handleResize); // Set up event listener
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up
+    };
+  }, []);
+
   const isExternalUrl = (url) => /^(https?:\/\/)/.test(url);
 
   return (
     <div className="event-slide">
       <div className="event-container">
         <div className="image-gallery">
-          {/* Only show the large image on mobile and both on desktop */}
           <div className="large-image-container">
             <BlurryImage
               src={eventInfo.images[0]}
@@ -26,14 +42,16 @@ const InPersonSlider = ({ eventInfo }) => {
               alt="Large Event"
             />
           </div>
-          {/* Only show small images on non-mobile devices */}
+          {/* Show small images only on medium and desktop screens */}
           {!isMobile && (
             <div className="small-images-container">
               {eventInfo.images.slice(1).map((img, index) => (
                 <BlurryImage
                   key={index}
                   src={img}
-                  className="small-image"
+                  className={`small-image ${
+                    isMediumScreen ? "medium-image" : ""
+                  }`} // Use class conditionally
                   alt={`Small Event ${index + 1}`}
                 />
               ))}

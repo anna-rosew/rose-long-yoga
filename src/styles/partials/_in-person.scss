@@ -141,6 +141,14 @@ h4 {
 }
 
 @include respond-to(medium) {
+  h1 {
+    margin: 0;
+  }
+
+  .image-gallery {
+    width: 95%;
+    margin: 0 auto;
+  }
   .event-container {
     flex-direction: column;
   }
@@ -149,37 +157,24 @@ h4 {
     padding: 0.62em;
   }
 
-  .image-gallery {
-    grid-template-columns: 1fr;
-
-    .large-image-container {
-      width: 100%;
-      height: 12.5em;
-    }
-
-    .small-images-container {
-      width: 100%;
-    }
-  }
-
   .event-swiper {
     position: relative;
-
-    padding-bottom: 3.12em;
+    padding: 0 0em 1em 0em;
 
     .swiper-pagination-bullet-active {
       background-color: #356d65;
       opacity: 1;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: black; // Change arrow color
-      width: 2em; // Adjust arrow size if necessary
-      height: 2em;
+    .swiper-button-next {
+      right: 0;
+      top: 20%;
+      transform: translateY(-50%);
+    }
 
-      &:after {
-        font-size: 2em; // Change arrow icon size if using FontAwesome or similar
-      }
+    .swiper-button-prev {
+      left: 0;
+      top: 20%;
+      transform: translateY(-50%);
     }
   }
 }
