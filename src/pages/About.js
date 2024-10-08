@@ -30,26 +30,47 @@ export default function About() {
               The despair I felt began to transform into quiet gratitude and
               wonder.
             </p>
-            <p>
-              Life brought teachers, mentors and transformative practices.
-              Challenges became opportunities for growth. I learned to cultivate
-              inner coherence instead of chaos. The mystery of life opened from
-              within. I continue to be amazed by what's possible when we make a
-              conscious choice to change. Working with people who are up for the
-              challenge keeps me inspired and motivated to keep learning and
-              growing myself.
-            </p>
-            <div className="grid-button-container">
-              <Link to="/blog" className="general-button">
-                Blog
-              </Link>
-              <Link to="/qualifications" className="general-button">
-                Qualifications
-              </Link>
+            <div className="desktop-and-mobile-element">
+              <p>
+                Life brought teachers, mentors and transformative practices.
+                Challenges became opportunities for growth. I learned to
+                cultivate inner coherence instead of chaos. The mystery of life
+                opened from within. I continue to be amazed by what's possible
+                when we make a conscious choice to change. Working with people
+                who are up for the challenge keeps me inspired and motivated to
+                keep learning and growing myself.
+              </p>
+              <div className="grid-button-container">
+                <Link to="/blog" className="general-button">
+                  Blog
+                </Link>
+                <Link to="/qualifications" className="general-button">
+                  Qualifications
+                </Link>
+              </div>
             </div>
           </div>
           <div className="about-image-container">
             <BlurryImage className="about-image" alt="Rose Long" src={Rose1} />
+          </div>
+        </div>
+        <div className="medium-element">
+          <p>
+            Life brought teachers, mentors and transformative practices.
+            Challenges became opportunities for growth. I learned to cultivate
+            inner coherence instead of chaos. The mystery of life opened from
+            within. I continue to be amazed by what's possible when we make a
+            conscious choice to change. Working with people who are up for the
+            challenge keeps me inspired and motivated to keep learning and
+            growing myself.
+          </p>
+          <div className="grid-button-container">
+            <Link to="/blog" className="general-button">
+              Blog
+            </Link>
+            <Link to="/qualifications" className="general-button">
+              Qualifications
+            </Link>
           </div>
         </div>
       </div>
