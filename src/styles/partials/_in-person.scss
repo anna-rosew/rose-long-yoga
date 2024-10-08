@@ -3,6 +3,10 @@
 @import "./variables";
 @import "./mixins";
 
+h4 {
+  text-align: center;
+}
+
 .details-icon {
   height: 1.25em;
   width: 1.25em;
@@ -18,40 +22,35 @@
 
 .event-swiper {
   position: relative;
-  padding-bottom: 3.12em;
-
-  .swiper-pagination-bullet-active {
-    background-color: #356d65;
-    opacity: 1;
-  }
 
   .event-swiper-button-next,
   .event-swiper-button-prev {
-    color: black !important;
-    width: 2.75em !important;
-    height: 2.75em !important;
+    position: absolute;
+    top: 50%; /* Align vertically to the middle */
+    transform: translateY(-50%); /* Center vertically */
+    width: 2.75em;
+    height: 2.75em;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
-    position: absolute;
-    bottom: 0.62em;
     cursor: pointer;
 
-    &::after {
-      font-family: swiper-icons;
-      font-size: 1.25em !important;
-      color: black !important;
+    /* Make sure the image is positioned inside */
+    img.nav-arrow {
+      width: 100%;
+      height: auto;
+      display: block;
     }
+  }
 
-    &.event-swiper-button-next {
-      right: 0.62em;
-    }
+  .event-swiper-button-next {
+    right: -1.5em; /* Move closer horizontally */
+  }
 
-    &.event-swiper-button-prev {
-      left: 0.62em;
-    }
+  .event-swiper-button-prev {
+    left: -1.5em; /* Move closer horizontally */
   }
 }
 
@@ -132,6 +131,12 @@
 .event-info-column {
   text-align: left;
   padding: 0 1.25em;
+
+  h4,
+  h2,
+  p {
+    text-align: left;
+  }
 }
 
 .in-person-page .general-button {

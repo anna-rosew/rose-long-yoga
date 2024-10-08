@@ -6,15 +6,12 @@ import Time from "../styles/imgs/icons/time.svg";
 import "../styles/InPerson.css";
 import BlurryImage from "../components/BlurryImage";
 
-// Utility function to replace markers with HTML tags
 const formatDescription = (text) => {
   return text.replace(/\[strong\](.*?)\[\/strong\]/g, "<strong>$1</strong>");
 };
 
 const InPersonSlider = ({ eventInfo }) => {
   const isMobile = window.innerWidth <= 768;
-
-  // Determine if the URL is internal or external
   const isExternalUrl = (url) => /^(https?:\/\/)/.test(url);
 
   return (
@@ -42,8 +39,8 @@ const InPersonSlider = ({ eventInfo }) => {
           )}
         </div>
         <div className="event-info-column">
-          <h3>Upcoming Event</h3>
-          <h1>{eventInfo.title}</h1>
+          <h4>Upcoming Event</h4>
+          <h2>{eventInfo.title}</h2>
           <p>
             <span className="details-span">
               <img

@@ -63,6 +63,12 @@ export default function InPerson() {
       <div className="container in-person-page">
         <h1>In-Person Sessions</h1>
         <h4>YOGA | COMMUNITY</h4>
+        <div className="event-swiper-button-prev">
+          <img src={prevArrow} alt="prev arrow" className="nav-arrow" />
+        </div>
+        <div className="event-swiper-button-next">
+          <img src={nextArrow} alt="next arrow" className="nav-arrow" />
+        </div>
         <Swiper
           pagination={{ clickable: true }}
           navigation={{
@@ -77,13 +83,6 @@ export default function InPerson() {
               <EventSlider eventInfo={event} />
             </SwiperSlide>
           ))}
-          {/* Custom Navigation Buttons */}
-          <div className="event-swiper-button-prev">
-            <img src={prevArrow} alt="prev arrow" className="nav-arrow" />
-          </div>
-          <div className="event-swiper-button-next">
-            <img src={nextArrow} alt="next arrow" className="nav-arrow" />
-          </div>
         </Swiper>
       </div>
     </div>
