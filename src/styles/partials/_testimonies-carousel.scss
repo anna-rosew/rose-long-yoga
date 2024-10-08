@@ -4,7 +4,7 @@
 @import "./mixins";
 
 .carousel-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 2.5em 0;
 }
@@ -19,7 +19,6 @@
   border-radius: 0.63em;
   position: relative;
   min-height: 15.63em;
-
   box-sizing: border-box;
   margin: 0 0.63em;
   overflow: hidden;
@@ -73,5 +72,17 @@
 
   .testimonial-slide {
     padding: 0.63em;
+  }
+
+  .carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5em 0;
+  }
+}
+
+@include respond-to(medium) {
+  .carousel-container {
+    padding: 2em 1em;
   }
 }

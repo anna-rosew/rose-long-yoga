@@ -46,7 +46,7 @@ export default function Groups() {
                 />
               </div>
               <button
-                className="mobile-button general-button button-center button-wide"
+                className="mobile-button general-button button-wide"
                 onClick={onClick}
               >
                 Find Schedule
@@ -65,7 +65,7 @@ export default function Groups() {
                 />
               </div>
               <button
-                className="mobile-button general-button button-center button-wide"
+                className="mobile-button general-button button-wide"
                 onClick={onClick2}
               >
                 Find Sessions
@@ -84,7 +84,7 @@ export default function Groups() {
                 />
               </div>
               <button
-                className="mobile-button general-button button-center button-wide"
+                className="mobile-button general-button button-wide"
                 onClick={onClick3}
               >
                 Find Details

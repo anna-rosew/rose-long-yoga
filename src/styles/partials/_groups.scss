@@ -10,19 +10,6 @@ button {
 @import "./variables";
 @import "./mixins";
 
-.section-spacing {
-  margin-top: 3.1em;
-  margin-bottom: 3.1em;
-}
-
-.online-groups-section {
-  margin-top: 1.875em; // 30px
-
-  @include respond-to(mobile) {
-    // Additional mobile-specific styles if needed
-  }
-}
-
 .yoga-image-container {
   position: relative;
   width: 11.25em;
@@ -86,8 +73,16 @@ button {
 .hr-lines {
   position: relative;
   max-width: 31.25em;
-  margin: 1.875em auto;
+  margin: 2em auto;
   text-align: center;
+
+  @include respond-to(mobile) {
+    margin: 1em auto;
+  }
+
+  @include respond-to(medium) {
+    margin: 1em auto;
+  }
 
   &:after {
     content: " ";
@@ -106,6 +101,10 @@ button {
       width: 7em;
     }
   }
+}
+
+.general-button {
+  margin: 1em 0em;
 }
 
 /* ---------------------Retreats---------------------*/
@@ -379,6 +378,10 @@ button {
     font-family: $font-primary;
     font-size: 1.5em;
     text-transform: uppercase;
+
+    @include respond-to(mobile) {
+      margin: 0;
+    }
   }
 
   @include respond-to(mobile) {
@@ -421,10 +424,6 @@ button {
 
 .class-description {
   text-align: left;
-
-  @include respond-to(medium) {
-    text-align: center;
-  }
 }
 
 .class-bottom-grid {
@@ -461,6 +460,13 @@ button {
 
   h3 {
     font-size: 1.2em;
+
+    @include respond-to(mobile) {
+      margin: 0;
+    }
+    @include respond-to(medium) {
+      margin: 0;
+    }
   }
 
   @include respond-to(medium) {
@@ -528,18 +534,19 @@ ul {
   padding-left: 1.5625em;
 
   @include respond-to(mobile) {
-    padding-left: 0;
+    padding-left: 1.25em;
   }
 }
 
 .price-grid ul li::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 0.25em;
   top: 50%;
   transform: translateY(-50%);
   width: 1em;
   height: 1em;
+
   background: url("../imgs/icons/star.svg") no-repeat center;
   background-size: cover;
 }
@@ -574,10 +581,12 @@ ul {
 
   @include respond-to(mobile) {
     padding: 0.5em 0em;
+    margin-bottom: 0em;
   }
 
   @include respond-to(medium) {
     padding: 0.5em 0em;
+    margin-bottom: 0;
   }
 }
 

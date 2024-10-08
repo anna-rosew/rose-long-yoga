@@ -63,10 +63,10 @@ export default function ClassSlides({ classInfo }) {
           <div className="price-grid">
             <ul>
               <li>
-                <p>Drop-In Price: {classInfo.dropInPrice}</p>
+                <p> Drop-In Price: {classInfo.dropInPrice}</p>
               </li>
               <li>
-                <p>Monthly: {classInfo.monthlyPrice}</p>
+                <p> Monthly: {classInfo.monthlyPrice}</p>
               </li>
             </ul>
             <div className="membership">

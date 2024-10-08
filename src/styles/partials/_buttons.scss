@@ -1,12 +1,12 @@
 // _buttons.scss
 .general-button {
-  padding: 5px 35px;
+  padding: 0.3125em 2.1875em;
   border-radius: $small-radius;
   font-family: $font-primary;
   font-size: 1.25em;
   text-transform: uppercase;
   background-color: transparent;
-  border: 2px solid black;
+  border: 0.125em solid black;
   transition: color 0.5s, background-color 0.3s;
   display: block;
 
@@ -30,7 +30,7 @@ button:hover {
 
 .button-center {
   display: block;
-  margin: 30px auto;
+  margin: 1.875em auto;
 }
 
 .button-wide {
@@ -57,7 +57,7 @@ button:hover {
   font-size: 1.25em;
   color: white;
   background-color: #356d65;
-  border: 2px solid #356d65;
+  border: 0.125em solid #356d65;
   transition: color 0.5s, background-color 0.3s, border 0.3s;
 
   @include respond-to(mobile) {
@@ -73,5 +73,5 @@ button:hover {
 .book-button:hover {
   color: white;
   background-color: black;
-  border: 2px solid black;
+  border: 0.125em solid black;
 }
