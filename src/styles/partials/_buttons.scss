@@ -30,6 +30,36 @@
   }
 }
 
+.highlight-button {
+  display: inline-flex;
+  align-items: center; /* Center the text and icon vertically */
+  padding: 0.3125em 1.9em; /* Adjust padding as needed */
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  text-align: left;
+  color: white;
+  border: 0.125em solid $primary-color;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: $primary-color;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.5s, background-color 0.3s, border 0.3s;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: black;
+  }
+
+  .button-arrow {
+    display: flex;
+    height: 1em;
+    margin-left: 0.25em; /* Space between text and arrow */
+    transition: transform 0.3s ease;
+  }
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -48,8 +78,8 @@ button:hover {
 .mobile-button {
   display: none;
   @include respond-to(mobile) {
-    display: block;
     margin: 1em 0 1em 0;
+    display: inline-flex;
   }
 }
 

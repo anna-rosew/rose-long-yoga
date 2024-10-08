@@ -6,6 +6,7 @@ import traditionalYoga from "../styles/imgs/icons/traditional_yoga.svg";
 import yogaAlliance from "../styles/imgs/icons/yoga-alliance.svg";
 import IAHC from "../styles/imgs/icons/IAHC.svg";
 import IIN from "../styles/imgs/icons/IIN.svg";
+import arrowIcon from "../styles/imgs/icons/blog-arrow.svg";
 
 import { Link } from "react-router-dom";
 
@@ -46,6 +47,10 @@ export default function Qualifications() {
             Despite all my experiences and training, I consider myself a work in
             progress!
           </p>
+          <button className="highlight-button button-wide mobile-button">
+            view full credientials{" "}
+            <img src={arrowIcon} className="button-arrow" alt="Arrow" />
+          </button>
         </div>
         <div className="credentials-container">
           <p>
