@@ -1,0 +1,172 @@
+//_footer.scss
+@import "./variables";
+@import "./mixins";
+
+.footer {
+  width: 100%;
+  margin-top: 1.88em;
+  background-color: #862b0d;
+  color: white;
+  flex-shrink: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25em;
+  padding: 1.88em;
+}
+
+.footer h3 {
+  font-size: 1em;
+}
+
+.footer p {
+  font-size: 0.75em;
+}
+
+.footer-button {
+  padding: 0.63em 1.25em;
+  border-radius: 1.06em;
+  margin: 1.25em 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #ccbb99;
+  background-color: black;
+  border: 0.13em solid black;
+  transition: color 0.5s, background-color 0.3s, border 0.3s;
+  justify-self: start;
+}
+
+.footer-button:hover {
+  color: black;
+  background-color: #ccbb99;
+  border: 0.13em solid #ccbb99;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.63em;
+}
+
+.site-logo-footer {
+  height: 4.38em;
+}
+
+.credits {
+  margin-bottom: 0.63em;
+  p {
+    color: white;
+  }
+}
+
+.social-footer img {
+  height: 3.13em;
+  display: inline-block;
+  margin: 0.63em;
+}
+
+.social-footer img:hover {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.all-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.all-pages h3 {
+  color: white;
+}
+
+.book-class {
+  display: block;
+}
+
+.all-pages li {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 0.94em;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: white;
+  padding: 0.31em 0;
+}
+
+.all-pages a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.all-pages a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.13em;
+  width: 0;
+  height: 0.13em;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.all-pages a:hover::after {
+  width: 100%;
+}
+
+.logo-footer a {
+  color: white;
+  font-weight: 700;
+}
+
+@include respond-to(mobile) {
+  .footer-grid {
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 0.31em;
+    padding: 1.25em;
+  }
+
+  .logo-footer {
+    margin: 0.63em auto;
+  }
+
+  .all-pages {
+    order: 1;
+  }
+
+  .logo-footer {
+    order: 2;
+  }
+
+  .all-pages li {
+    font-size: 0.75em;
+  }
+
+  .footer-button {
+    margin: 1.25em auto;
+  }
+
+  .credits-mobile {
+    display: block;
+  }
+
+  a {
+    color: white;
+  }
+}

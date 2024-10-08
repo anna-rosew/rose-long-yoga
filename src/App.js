@@ -34,31 +34,33 @@ function App() {
     <div className="App">
       <NavBar />
       <ScrollToTop />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/approach" element={<Approach />} />
-        <Route path="/groups" element={<Groups />} />
-        <Route path="/onetoone" element={<OneToOne />} />
-        <Route path="/retreats" element={<Retreats />} />
-        <Route path="/membership" element={<Membership />} />
-        <Route path="/qualifications" element={<Qualifications />} />
-        <Route path="/inperson" element={<InPerson />} />
-        <Route path="*" element={<NotPage />} />
+      <div className="main-content">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/approach" element={<Approach />} />
+          <Route path="/groups" element={<Groups />} />
+          <Route path="/onetoone" element={<OneToOne />} />
+          <Route path="/retreats" element={<Retreats />} />
+          <Route path="/membership" element={<Membership />} />
+          <Route path="/qualifications" element={<Qualifications />} />
+          <Route path="/inperson" element={<InPerson />} />
+          <Route path="*" element={<NotPage />} />
 
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/foodarticle" element={<FoodArticle />} />
-        <Route path="/selfarticle" element={<SelfArticle />} />
-        <Route path="/riskarticle" element={<RiskArticle />} />
-        <Route path="/voicearticle" element={<VoiceArticle />} />
-        <Route path="/sugararticle" element={<SugarArticle />} />
-        <Route path="/insidearticle" element={<InsideOutArticle />} />
-        <Route path="/hiddenarticle" element={<HiddenTreasureArticle />} />
-        <Route path="/lynninterview" element={<LynnInterview />} />
-      </Routes>{" "}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/foodarticle" element={<FoodArticle />} />
+          <Route path="/selfarticle" element={<SelfArticle />} />
+          <Route path="/riskarticle" element={<RiskArticle />} />
+          <Route path="/voicearticle" element={<VoiceArticle />} />
+          <Route path="/sugararticle" element={<SugarArticle />} />
+          <Route path="/insidearticle" element={<InsideOutArticle />} />
+          <Route path="/hiddenarticle" element={<HiddenTreasureArticle />} />
+          <Route path="/lynninterview" element={<LynnInterview />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

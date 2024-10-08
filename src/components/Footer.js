@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/CreditsFooter.css";
+import "../styles/partials/_footer.scss";
 import Logo from "../styles/imgs/icons/logo_white.svg";
 import InstaIcon from "../styles/imgs/icons/insta-footer.svg";
 import VimeoIcon from "../styles/imgs/icons/footer-vimeo.svg";
