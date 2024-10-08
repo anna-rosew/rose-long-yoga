@@ -22,39 +22,42 @@ export default function ClassSlides({ classInfo }) {
         </p>
       </div>
       <div className="class-bottom-grid">
-        <div className="details-table">
-          <div className="dates-column">
-            <h3>Class Dates</h3>
-            <ul>
-              {classInfo.dates.length > 0 ? (
-                classInfo.dates.map((date, index) => (
-                  <li key={index}>
-                    <p>{date}</p>
-                  </li>
-                ))
-              ) : (
-                <p>No dates available</p>
-              )}
-            </ul>
-          </div>
-          <div className="time-column">
-            <h3>Time</h3>
-            <ul>
-              {classInfo.times.length > 0 ? (
-                classInfo.times.map((time, index) => (
-                  <li key={index}>
-                    <p>{time}</p>
-                  </li>
-                ))
-              ) : (
-                <p>No times available</p>
-              )}
-            </ul>
+        <div className="details-container">
+          <div className="details-table">
+            <div className="dates-column">
+              <h3>Class Dates</h3>
+              <ul>
+                {classInfo.dates.length > 0 ? (
+                  classInfo.dates.map((date, index) => (
+                    <li key={index}>
+                      <p>{date}</p>
+                    </li>
+                  ))
+                ) : (
+                  <p>No dates available</p>
+                )}
+              </ul>
+            </div>
+            <div className="time-column">
+              <h3>Time</h3>
+              <ul>
+                {classInfo.times.length > 0 ? (
+                  classInfo.times.map((time, index) => (
+                    <li key={index}>
+                      <p>{time}</p>
+                    </li>
+                  ))
+                ) : (
+                  <p>No times available</p>
+                )}
+              </ul>
+            </div>
           </div>
           <Link to="/contact">
-            <button className="book-button button-wide">BOOK NOW</button>
+            <button className="book-button">BOOK NOW</button>
           </Link>
         </div>
+
         <div className="prices">
           <h3>Prices</h3>
           <div className="price-grid">

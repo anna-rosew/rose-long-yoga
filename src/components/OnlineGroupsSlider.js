@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 
 import ClassSlides from "../components/ClassSlides";
 import { Pagination } from "swiper/modules";
-import "../styles/ClassSlide.css"; 
+import "../styles/partials/_groups.scss";
 
 export default function OnlineGroupsSlider() {
   const swiperRef = useRef(null);

@@ -449,7 +449,7 @@ button {
 
 .dates-column,
 .time-column {
-  margin-bottom: 0.625em;
+  margin-bottom: 0.05em;
 
   h3 {
     font-size: 1.2em;
@@ -498,32 +498,8 @@ ul {
   }
 }
 
-.price-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
-  @include respond-to(mobile) {
-    grid-template-columns: 1fr;
-  }
-
-  @include respond-to(medium) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .membership {
-  padding-left: 1.875em;
   display: block;
-  border-left: 1px solid black;
-
-  @include respond-to(mobile) {
-    padding-left: 0;
-    border-left: none;
-  }
-
-  @include respond-to(medium) {
-    padding-left: 1.25em;
-  }
 }
 
 .membership-price {
@@ -560,41 +536,10 @@ ul {
   background-size: cover;
 }
 
-.book-button {
-  padding: 0.3125em 2.1875em;
-  display: block;
-  margin: 0;
-  border-radius: 1.0625em;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  color: white;
-  background-color: #356d65;
-  border: 2px solid #356d65;
-  transition: color 0.5s, background-color 0.3s, border 0.3s;
-
-  @include respond-to(mobile) {
-    padding: 0.5em 1.5em;
-    font-size: 1em;
-  }
-
-  @include respond-to(medium) {
-    padding: 0.4em 2em;
-  }
-}
-
-.book-button:hover {
-  color: white;
-  background-color: black;
-  border: 2px solid black;
-}
-
 .swiper-pagination-bullet {
   opacity: 1;
   border: none;
-  padding: 0px;
+  padding: 0em;
   margin: 0 auto;
 }
 
@@ -609,12 +554,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 10px;
+  top: 0.625em;
   left: 0;
   right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   z-index: 10;
-  padding: 20px 0px;
+  padding: 1.25em 0em;
   pointer-events: none;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -626,18 +571,21 @@ ul {
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  padding: 30px 10px;
-  padding-bottom: 40px;
-  border-radius: 5px;
+  padding: 1.875em 0.625em;
+  padding-bottom: 2.5em;
+  border-radius: 0.3125em;
   transition: all 0.3s ease;
   pointer-events: all;
   color: black !important;
   text-align: center;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  color: black;
   background: transparent;
-  pointer-events: all;
+
+  @include respond-to(mobile) {
+    padding: 2.5em 0.625em 4em 0.625em;
+  }
+
+  @include respond-to(medium) {
+  }
 }
 
 .custom-bullet:hover {
@@ -645,5 +593,5 @@ ul {
 }
 
 .swiper-pagination-bullet-active.custom-bullet {
-  border: 2px solid #000;
+  border: 0.125em solid #000;
 }
