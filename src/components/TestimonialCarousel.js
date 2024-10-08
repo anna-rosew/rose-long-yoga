@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/TestimonialCarousel.css";
+import "../styles/partials/_testimonies-carousel.scss";
 
 import { NextArrow, PrevArrow } from "./CustomArrow";
 import ruth from "../styles/imgs/testimonials/Ruth.png";

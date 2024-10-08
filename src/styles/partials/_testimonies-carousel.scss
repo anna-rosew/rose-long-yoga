@@ -1,5 +1,8 @@
 //_testimonies-carousel
 
+@import "./variables";
+@import "./mixins";
+
 .carousel-container {
   width: 90%;
   margin: 0 auto;
@@ -16,7 +19,7 @@
   border-radius: 0.63em;
   position: relative;
   min-height: 15.63em;
-  color: #862b0d;
+
   box-sizing: border-box;
   margin: 0 0.63em;
   overflow: hidden;
@@ -28,6 +31,7 @@
   font-style: italic;
   font-size: 1em;
   line-height: 1.5;
+  color: #862b0d;
   margin-bottom: 0.63em;
 }
 

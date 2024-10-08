@@ -2,7 +2,7 @@
 
 .container {
   padding: 0 15%;
-  min-height: 100vh;
+
   flex-grow: 1;
 
   @include respond-to(mobile) {
