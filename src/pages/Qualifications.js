@@ -1,6 +1,8 @@
-import React from "react";
-import "../styles/Qualifications.css";
-import "../styles/About.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import TrainingModal from "../components/TrainingModal";
+
 import kundaliniResearch from "../styles/imgs/icons/kundali-institute.svg";
 import traditionalYoga from "../styles/imgs/icons/traditional_yoga.svg";
 import yogaAlliance from "../styles/imgs/icons/yoga-alliance.svg";
@@ -8,16 +10,18 @@ import IAHC from "../styles/imgs/icons/IAHC.svg";
 import IIN from "../styles/imgs/icons/IIN.svg";
 import arrowIcon from "../styles/imgs/icons/blog-arrow.svg";
 
-import { Link } from "react-router-dom";
+import "../styles/partials/_qualifications.scss";
 
 export default function Qualifications() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="Qualifications">
       <div className="container">
         <div className="heading-container">
           <h1>Training/Qualifications</h1>
         </div>
-        <div className="qualifications-description">
+        <div className="text">
           <p>
             I've been teaching and facilitating groups since my mid-twenties.
             Initially, I trained as a secondary school teacher in Religious
@@ -47,12 +51,17 @@ export default function Qualifications() {
             Despite all my experiences and training, I consider myself a work in
             progress!
           </p>
-          <button className="highlight-button button-wide mobile-button">
+          <button
+            className="highlight-button button-wide mobile-button"
+            onClick={() => setOpenModal(true)}
+          >
             view full credientials{" "}
             <img src={arrowIcon} className="button-arrow" alt="Arrow" />
           </button>
         </div>
-        <div className="credentials-container">
+        {openModal && <TrainingModal closeModal={setOpenModal} />}
+
+        <div className="credentials-container desktop-and-medium-element">
           <p>
             <p>
               2023:{" "}
@@ -169,7 +178,7 @@ export default function Qualifications() {
             </p>
           </p>
         </div>
-        <div className="grid institution-icons-grid">
+        <div className="institution-icons-grid">
           <a href="https://kundaliniresearchinstitute.org/en/">
             <img
               src={kundaliniResearch}
@@ -189,7 +198,7 @@ export default function Qualifications() {
             <img src={IIN} alt="Institute of Integrative Nutrition" />
           </a>
         </div>
-        <div className="qualification-button-container">
+        <div className="grid-button-container">
           <Link to="/work">
             <button className="start general-button">Start Your Journey</button>
           </Link>

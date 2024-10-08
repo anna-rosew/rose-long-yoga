@@ -64,6 +64,12 @@
   }
 }
 
+.desktop-and-medium-element {
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
 .desktop-element {
   @include respond-to(mobile) {
     display: none;

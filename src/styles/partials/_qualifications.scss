@@ -1,0 +1,139 @@
+//_qualifications.scss
+
+@import "./variables";
+@import "./mixins";
+
+.Qualifications h1 {
+  text-align: left;
+}
+
+.credentials-container {
+  text-align: left;
+}
+
+.credentials-container p {
+  line-height: 2em;
+}
+
+.institution-icons-grid {
+  display: grid;
+  margin-top: 3.13em;
+  gap: 1em;
+  margin-bottom: 3.13em;
+  width: 60%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.institution-icons-grid img {
+  height: 6.88em;
+}
+
+.qualification-button-container {
+  margin-top: 1.88em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  gap: 1.88em;
+}
+
+.Qualifications .general-button {
+  width: 100%;
+}
+
+@include respond-to(mobile) {
+  .heading-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Qualifications h1 {
+    font-size: 1.75em;
+    margin: 0;
+    padding: 0.31em;
+  }
+
+  .Qualifications h2 {
+    font-size: 1.75em;
+    margin: 0;
+    padding: 0.31em;
+  }
+
+  .credentials-container {
+    text-align: left;
+    margin: 1.25em;
+  }
+
+  .credentials-container p {
+    line-height: 1.63em;
+  }
+
+  .institution-icons-grid img {
+    height: 6.25em;
+  }
+
+  .institution-icons-grid {
+    display: grid;
+    margin-top: 0.63em;
+    margin-bottom: 0.63em;
+    margin-left: 0.63em;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .qualification-button-container {
+    grid-template-columns: 1fr;
+    margin-top: 1.88em;
+  }
+
+  .custom-spacer {
+    display: block;
+    margin: 0.63em auto;
+  }
+}
+
+/* --------------------- Modal ---------------------*/
+
+.TrainingModal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.1em;
+  z-index: 9999;
+}
+
+.modal-container {
+  background-color: $quaternary-color;
+  padding: 2em 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 80%;
+  max-width: 37em;
+  margin: 1em auto;
+}
+
+.exit-container {
+  display: flex;
+  align-items: center;
+}
+
+.close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  .exit-icon {
+    width: 1.5em;
+    height: auto;
+  }
+}
