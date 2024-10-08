@@ -1,0 +1,73 @@
+//_testimonies-carousel
+
+.carousel-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2.5em 0;
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.25em;
+  border-radius: 0.63em;
+  position: relative;
+  min-height: 15.63em;
+  color: #862b0d;
+  box-sizing: border-box;
+  margin: 0 0.63em;
+  overflow: hidden;
+}
+
+.testimonial-text {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.63em;
+}
+
+.testimonial-name {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.testimonial-location {
+  font-size: 1em;
+  color: #777;
+}
+
+.profile-image {
+  width: 5.63em;
+  height: 5.63em;
+  border-radius: 50%;
+  margin: 0.63em auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+@include respond-to(mobile) {
+  .testimonial-text {
+    font-size: 0.88em;
+  }
+
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.13em 0;
+  }
+
+  .testimonial-slide {
+    padding: 0.63em;
+  }
+}
