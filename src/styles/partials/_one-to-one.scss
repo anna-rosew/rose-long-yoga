@@ -1,0 +1,44 @@
+//_one-to-one.scss
+
+@import "./variables";
+@import "./mixins";
+
+.OneToOne-Page {
+  .subtitle {
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .player-wrapper {
+    margin-top: 1em;
+  }
+}
+
+.one-to-one-text {
+  display: block;
+  margin: 1.875em auto;
+}
+
+.what-to-expect {
+  text-align: center;
+  margin: 3.125em 0 3.125em 0;
+
+  .heading {
+    font-size: 1.25em;
+    font-weight: 600;
+  }
+
+  .what-to-expect-grid {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  img {
+    width: 11.25em;
+    margin: 0 auto;
+    @include respond-to(mobile) {
+      width: 5em;
+    }
+  }
+}

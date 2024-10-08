@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 
 import "../styles/partials/_approach.scss";
-import "../styles/App.css";
+import "../styles/partials/_video-players.scss";
 
 export default function Approach() {
   return (
@@ -23,7 +23,9 @@ export default function Approach() {
 
       <div className="call-to-action">
         <Link to="/work">
-          <button className="general-button">Start Your Journey</button>
+          <button className="general-button button-center">
+            Start Your Journey
+          </button>
         </Link>
       </div>
       <div className="text">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/OneToOne.css";
+
+import "../styles/partials/_one-to-one.scss";
 import IconOne from "../styles/imgs/icons/calender.svg";
 import IconTwo from "../styles/imgs/icons/laptop.svg";
 import IconThree from "../styles/imgs/icons/daily.svg";
@@ -22,6 +23,12 @@ export default function OneToOne() {
         ></iframe>
       </div>
 
+      <Link to="/contact">
+        <button className="general-button button-center">
+          Book a Free 30 Min Session
+        </button>
+      </Link>
+
       <div className="one-to-one-text">
         <p>
           These sessions offer you what you need to{" "}
@@ -40,7 +47,7 @@ export default function OneToOne() {
         </p>
         <div className="what-to-expect">
           <h4>What to expect</h4>
-          <div className="grid grid-3-columns">
+          <div className="what-to-expect-grid">
             <div className="item-one">
               <p className="heading">Choose Your Rhythm</p>
 
@@ -62,7 +69,9 @@ export default function OneToOne() {
           </div>
         </div>
         <Link to="/contact">
-          <button className="general-button">Book a Free 30 Min Session</button>
+          <button className="book-button button-wide">
+            start your journey
+          </button>
         </Link>
       </div>
     </div>

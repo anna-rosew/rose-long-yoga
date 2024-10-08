@@ -142,7 +142,7 @@ h4 {
 
 @include respond-to(medium) {
   h1 {
-    margin: 0;
+    margin: 0.5em;
   }
 
   .image-gallery {
