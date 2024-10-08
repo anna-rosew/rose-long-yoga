@@ -101,25 +101,26 @@ export default function Groups() {
 
       <div className="in-person-sessions" id="inPerson">
         <h2 className="section-heading hr-lines">In-Person Sessions</h2>
-        <div className="section-spacing">
-          <div className="grid-2-columns">
-            <div className="in-person-card">
-              <Link to="/inperson" className="card-link">
-                <div className="in-person-img-container">
-                  <img
-                    src={Workshop1}
-                    className="in-person-image"
-                    alt="In-Person Session"
-                  />
-                  <div className="in-person-overlay">
-                    <h4>Upcoming Workshop:</h4>
-                    <h2>Breathwork Course</h2>
-                    <p>
-                      Join Rose for an introduction to Breath Work. This five
-                      week course will introduce you to foundational practices
-                      that allow you to{" "}
-                      <strong>access the power of your breath</strong>.
-                    </p>
+
+        <div className="grid-2-columns">
+          <div className="in-person-card">
+            <Link to="/inperson" className="card-link">
+              <div className="in-person-img-container">
+                <img
+                  src={Workshop1}
+                  className="in-person-image"
+                  alt="In-Person Session"
+                />
+                <div className="in-person-overlay">
+                  <h4>Upcoming Workshop:</h4>
+                  <h2>Breathwork Course</h2>
+                  <p>
+                    Join Rose for an introduction to Breath Work. This five week
+                    course will introduce you to foundational practices that
+                    allow you to{" "}
+                    <strong>access the power of your breath</strong>.
+                  </p>
+                  <div className="overlay-details">
                     <span>
                       <img src={Location} alt="icon" className="overlay-svg2" />
                       <p>Absolute Yoga, Liverpool. UK</p>
@@ -130,81 +131,67 @@ export default function Groups() {
                     </span>
                   </div>
                 </div>
+              </div>
+            </Link>
+            <div className="in-person-info-mobile">
+              <h4>Upcoming Workshop:</h4>
+              <h2>Moving Beyond Separation: The Power of The Breath.</h2>
+              <p>
+                This workshop uses movement and breathwork to experience unity
+                through conscious breathing. Followed by a{" "}
+                <strong>shared lunch.</strong>
+              </p>
+              <span>
+                <img src={LocationBlack} alt="icon" className="overlay-svg2" />
+                <p>Home Studio, Liverpool. UK</p>
+              </span>
+              <span>
+                <img src={CalenderBlack} alt="icon" className="overlay-svg2" />
+                <p>Mon 26 Aug, 10.00 - 12.30 am</p>
+              </span>
+              <Link to="/contact">
+                <button className="book-button">BOOK NOW</button>
               </Link>
-              <div className="in-person-info-mobile">
-                <h4>Upcoming Workshop:</h4>
-                <h2>Moving Beyond Separation: The Power of The Breath.</h2>
-                <p>
-                  This workshop uses movement and breathwork to experience unity
-                  through conscious breathing. Followed by a{" "}
-                  <strong>shared lunch.</strong>
-                </p>
-                <span>
-                  <img
-                    src={LocationBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Home Studio, Liverpool. UK</p>
-                </span>
-                <span>
-                  <img
-                    src={CalenderBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Mon 26 Aug, 10.00 - 12.30 am</p>
-                </span>
-                <Link to="/contact">
-                  <button className="book-button">BOOK NOW</button>
-                </Link>
-              </div>
             </div>
-            <div className="in-person-card">
-              <div className="in-person-info-mobile">
-                <h4>Upcoming Workshop:</h4>
-                <h2>Moving Beyond Separation: The Power of The Breath.</h2>
-                <p>
-                  This workshop uses movement and breathwork to experience unity
-                  through conscious breathing. Followed by a{" "}
-                  <strong>shared lunch.</strong>
-                </p>
-                <span>
-                  <img
-                    src={LocationBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Home Studio, Liverpool. UK</p>
-                </span>
-                <span>
-                  <img
-                    src={CalenderBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Mon 26 Aug, 10.00 - 12.30 am</p>
-                </span>
-                <Link to="/contact">
-                  <button className="book-button">BOOK NOW</button>
-                </Link>
-              </div>
-              <Link to="/inperson" className="card-link">
-                <div className="in-person-img-container">
-                  <img
-                    src={Workshop1}
-                    className="in-person-image"
-                    alt="In-Person Session"
-                  />
-                  <div className="in-person-overlay">
-                    <h4>Upcoming Workshop:</h4>
-                    <h2>Breathwork Course</h2>
-                    <p>
-                      Join Rose for an introduction to Breath Work. This five
-                      week course will introduce you to foundational practices
-                      that allow you to{" "}
-                      <strong>access the power of your breath</strong>.
-                    </p>
+          </div>
+          <div className="in-person-card">
+            <div className="in-person-info-mobile">
+              <h4>Upcoming Workshop:</h4>
+              <h2>Moving Beyond Separation: The Power of The Breath.</h2>
+              <p>
+                This workshop uses movement and breathwork to experience unity
+                through conscious breathing. Followed by a{" "}
+                <strong>shared lunch.</strong>
+              </p>
+              <span>
+                <img src={LocationBlack} alt="icon" className="overlay-svg2" />
+                <p>Home Studio, Liverpool. UK</p>
+              </span>
+              <span>
+                <img src={CalenderBlack} alt="icon" className="overlay-svg2" />
+                <p>Mon 26 Aug, 10.00 - 12.30 am</p>
+              </span>
+              <Link to="/contact">
+                <button className="book-button">BOOK NOW</button>
+              </Link>
+            </div>
+            <Link to="/inperson" className="card-link">
+              <div className="in-person-img-container">
+                <img
+                  src={Workshop1}
+                  className="in-person-image"
+                  alt="In-Person Session"
+                />
+                <div className="in-person-overlay">
+                  <h4>Upcoming Workshop:</h4>
+                  <h2>Breathwork Course</h2>
+                  <p>
+                    Join Rose for an introduction to Breath Work. This five week
+                    course will introduce you to foundational practices that
+                    allow you to{" "}
+                    <strong>access the power of your breath</strong>.
+                  </p>
+                  <div className="overlay-details">
                     <span>
                       <img src={Location} alt="icon" className="overlay-svg2" />
                       <p>Absolute Yoga, Liverpool. UK</p>
@@ -215,8 +202,8 @@ export default function Groups() {
                     </span>
                   </div>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
