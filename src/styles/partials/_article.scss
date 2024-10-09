@@ -14,9 +14,24 @@
   }
 }
 
-.article-summary {
-  opacity: 0.5;
-  font-weight: 700;
+.article-header {
+  margin: 3em 0;
+  h4,
+  h1,
+  p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .article-summary {
+    opacity: 0.5;
+    font-weight: 700;
+  }
 }
 
 .article-cover-container {
@@ -252,7 +267,7 @@
   }
 }
 
-.article-bottom-buttons {
+.blog-bottom-buttons {
   text-align: left;
 }
 

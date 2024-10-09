@@ -32,9 +32,11 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ScrollToTop />
-      <div className="main-content">
+      <header>
+        <NavBar />
+        <ScrollToTop />
+      </header>
+      <main>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -60,8 +62,10 @@ function App() {
           <Route path="/hiddenarticle" element={<HiddenTreasureArticle />} />
           <Route path="/lynninterview" element={<LynnInterview />} />
         </Routes>
-      </div>
-      <Footer />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
