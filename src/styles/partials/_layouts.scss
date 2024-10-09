@@ -108,6 +108,12 @@
   }
 }
 
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .card {
   border: none;
   background-color: transparent;
