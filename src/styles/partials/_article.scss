@@ -15,7 +15,7 @@
 }
 
 .article-header {
-  margin: 3em 0;
+  margin: 3em 0 1.5em 0;
   h4,
   h1,
   p {
@@ -271,9 +271,10 @@
   text-align: left;
 }
 
-.back-button,
-.journey-button {
+.blog-button {
   display: inline-flex;
+  border: 0.06em solid black;
+  color: black;
   align-items: center;
   padding: 0.63em 0.94em;
   font-family: "Jost", sans-serif;
@@ -288,39 +289,8 @@
 
   &:hover {
     text-decoration: none;
-  }
-
-  .blog-arrow {
-    height: 1.25em;
-    margin-left: 0.63em;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-}
-
-.back-button {
-  color: black;
-  border: 0.06em solid black;
-  background-color: transparent;
-
-  &:hover {
-    color: #ccbb99;
+    color: $secondary-color;
     background-color: black;
-    border-color: black;
-  }
-}
-
-.journey-button {
-  color: #ccbb99;
-  background-color: black;
-  border: 0.06em solid black;
-
-  &:hover {
-    color: black;
-    background-color: #ccbb99;
-    border-color: black;
+    border: 0.06em solid black;
   }
 }

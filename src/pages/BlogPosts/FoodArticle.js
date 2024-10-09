@@ -1,29 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import CopyButton from "../../components/CopyButton";
 
 import "../../styles/partials/_article.scss";
 
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
-import arrowIcon from "../../styles/imgs/icons/blog-arrow.svg";
-
-import { Link } from "react-router-dom";
 
 export default function FoodArticle() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard
-      .writeText(window.location.href)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Hide message after 2 seconds
-      })
-      .catch((err) => {
-        console.error("Failed to copy text: ", err);
-      });
-  };
-
   return (
     <article>
       <div className="container">
@@ -62,10 +48,7 @@ export default function FoodArticle() {
                   </div>
                 </div>
                 <div className="button-column">
-                  {copied && <p className="copied-message">Copied!</p>}
-                  <button className="copy-button" onClick={handleCopy}>
-                    COPY LINK
-                  </button>
+                  <CopyButton />
                 </div>
               </div>
             </div>
@@ -175,11 +158,10 @@ export default function FoodArticle() {
           </p>
         </div>
         <div className="blog-bottom-buttons">
-          <Link to="/SelfArticle" className="back-button" role="button">
+          <Link to="/SelfArticle" className="blog-button" role="button">
             MORE CONTENT
-            <img src={arrowIcon} className="blog-arrow" alt="Arrow" />
           </Link>
-          <Link to="/work" className="journey-button" role="button">
+          <Link to="/work" className="blog-button" role="button">
             START YOUR JOURNEY
           </Link>
         </div>
