@@ -3,6 +3,8 @@
 @import "./variables";
 @import "./mixins";
 
+/* --------------------- Article ---------------------*/
+
 .blog-article {
   text-align: left;
   border-bottom: 0.06em solid rgba(0, 0, 0, 0.7);
@@ -287,3 +289,5 @@
     border: 0.06em solid black;
   }
 }
+
+/* --------------------- Video ---------------------*/
