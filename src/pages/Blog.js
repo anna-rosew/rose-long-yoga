@@ -48,7 +48,13 @@ export default function Blog() {
   return (
     <div className="blog-page">
       <div className="container">
-        <h1 className="blog-heading">Blog</h1>{" "}
+        <div className="blog-heading">
+          <h1>Blog</h1>{" "}
+          <p className="text">
+            Welcome to my blog! I’m excited to have you here on this journey of
+            personal growth and transformation.
+          </p>
+        </div>
         <a
           href="https://www.youtube.com/watch?v=QdZIW0etTkA"
           target="_blank"
