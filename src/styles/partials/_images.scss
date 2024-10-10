@@ -2,7 +2,7 @@
 
 .img-responsive {
   max-width: 100%;
-  border-radius: var(--image-border-radius);
+  border-radius: $image-border-radius;
 }
 
 .blurry {

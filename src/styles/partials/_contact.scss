@@ -3,38 +3,56 @@
 @import "./variables";
 @import "./mixins";
 
-.Contact {
+.contact {
   h1 {
     text-align: left;
   }
 }
 
 .socials {
-  padding: 1em 1.25em 0;
+  padding: 0;
+
+  @include respond-to(mobile) {
+    padding: 1em 1.25em 0;
+  }
 }
 
 .email-link {
-  padding: 0 1.25em;
+  padding: 0;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    left: 1.25em;
+    left: 0;
     bottom: 0;
-    height: 0.125em;
+    height: 0.05em;
     width: 0;
     background-color: black;
     transition: width 0.5s ease;
   }
 
   &:hover::after {
-    width: 62%;
+    width: 50%;
+  }
+
+  @include respond-to(mobile) {
+    padding: 0 1.25em;
+
+    &::after {
+      left: 1.25em;
+    }
   }
 }
 
-.home-link:hover::after {
-  width: 60%;
+.info-container {
+  margin-top: 15%;
+  margin-right: 15%;
+
+  @include respond-to(mobile) {
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 .forms-container {
@@ -195,13 +213,13 @@
 
 .contact-image-container {
   display: block;
-  padding: 1em 0em 1em 0em;
-  width: 25em;
+  margin: 0 auto;
+  width: 20em;
 
   img {
-    width: 80%;
+    width: 20%;
     object-fit: cover;
-    border-radius: 2.81em;
+    border-radius: $image-border-radius;
   }
 
   @include respond-to(mobile) {
