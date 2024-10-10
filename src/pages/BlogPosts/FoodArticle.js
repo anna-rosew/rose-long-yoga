@@ -153,11 +153,11 @@ export default function FoodArticle() {
           <strong>What are you committed to today in your explorations?</strong>
         </p>
       </article>
-      <div className="blog-bottom-buttons">
+      <div className="article-footer">
         <Link to="/SelfArticle" className="blog-button" role="button">
           MORE CONTENT
         </Link>
-        <Link to="/work" className="blog-button" role="button">
+        <Link to="/work" className="blog-button inverse-button" role="button">
           START YOUR JOURNEY
         </Link>
       </div>

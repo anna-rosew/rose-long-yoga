@@ -15,7 +15,7 @@ export default function Blog() {
         "Join Rose Long as she delves into the ancient practices and stories behind Lynn Hanford-Day's Sacred Intuitive Art.",
       icon: require("../styles/imgs/icons/video-icon.png"),
       postType: "Video",
-      link: "/lynninterview",
+      link: "/insidearticle",
       date: "08/24",
       img: require("../styles/imgs/blog/lynn_interview_blog.png"),
     },

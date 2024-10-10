@@ -5,12 +5,14 @@ import "../../styles/partials/_blog-content.scss";
 import transriptIcon from "../../styles/imgs/icons/transcript.png";
 import captionsIcon from "../../styles/imgs/icons/captions.png";
 
+import CaptionsModal from "../../components/CaptionsModal";
+
 export default function BlogVideoTemplate() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="BlogVideo">
       <div className="container">
-        <div className="blog-article">
+        <article className="blog-article">
           <div className="article-header">
             <h4 className="subtitle">
               <strong>VIDEO: </strong>INTERVIEW
@@ -49,8 +51,8 @@ export default function BlogVideoTemplate() {
             </div>
             {openModal && <CaptionsModal closeModal={setOpenModal} />}
           </div>
-        </div>{" "}
-        <div className="blog-bottom-buttons">
+        </article>{" "}
+        <div className="article-footer">
           <Link to="/SelfArticle" className="blog-button" role="button">
             MORE CONTENT
           </Link>

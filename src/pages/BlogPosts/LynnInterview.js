@@ -12,7 +12,7 @@ export default function LynnInterview() {
   return (
     <div className="BlogVideo">
       <div className="container">
-        <div className="blog-article">
+        <article className="blog-article">
           <div className="article-header">
             <h4 className="subtitle">
               <strong>VIDEO: </strong>INTERVIEW
@@ -51,8 +51,8 @@ export default function LynnInterview() {
             </div>
             {openModal && <CaptionsModal closeModal={setOpenModal} />}
           </div>
-        </div>{" "}
-        <div className="blog-bottom-buttons">
+        </article>{" "}
+        <div className="article-footer">
           <Link to="/SelfArticle" className="blog-button" role="button">
             MORE CONTENT
           </Link>

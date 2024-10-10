@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "../../styles/App.css";
-import "../../styles/Article.css";
+import { Link } from "react-router-dom";
+
+import "../../styles/partials/_blog-content.scss";
+
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
-import { Link } from "react-router-dom";
 
 export default function InsideOutArticle() {
   const [copied, setCopied] = useState(false);
@@ -19,7 +20,7 @@ export default function InsideOutArticle() {
       .writeText(window.location.href)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Hide message after 2 seconds
+        setTimeout(() => setCopied(false), 2000);
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
@@ -28,7 +29,7 @@ export default function InsideOutArticle() {
 
   return (
     <div className="container">
-      <div className="blog-article">
+      <article className="blog-article">
         <h3 className="subtitle">
           <strong>ARTICLE: </strong>LONG READ
         </h3>
@@ -256,12 +257,12 @@ export default function InsideOutArticle() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="article-bottom-buttons">
-        <Link to="/blog" className="back-button">
+      </article>
+      <div className="article-footer">
+        <Link to="/SelfArticle" className="blog-button" role="button">
           MORE CONTENT
         </Link>
-        <Link to="/work" className="journey-button">
+        <Link to="/work" className="blog-button inverse-button" role="button">
           START YOUR JOURNEY
         </Link>
       </div>
