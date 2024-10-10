@@ -180,6 +180,10 @@ article .blog-article {
 
 .contents {
   position: relative;
+
+  h3 {
+    font-size: 1.2em;
+  }
 }
 
 .arrow-nav {
@@ -263,15 +267,6 @@ article .blog-article {
       }
     }
   }
-}
-
-.article-subheading {
-  font-family: "Jost", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.5em;
-  line-height: 1.56em;
-  letter-spacing: 0.02em;
 }
 
 /* --------------------- Video ---------------------*/

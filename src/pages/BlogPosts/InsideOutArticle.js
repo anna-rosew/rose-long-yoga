@@ -150,7 +150,7 @@ export default function InsideOutArticle() {
           </div>
         </div>
         <div className="main-article">
-          <h3 id="outside-in-living">Outside In Living</h3>
+          <h2 id="outside-in-living">Outside In Living</h2>
           <p>
             When you attend to your inner reality, you discover the solutions
             can be unlocked within you. Hold on, that’s so simple, why isn’t
@@ -162,7 +162,7 @@ export default function InsideOutArticle() {
             find security and comfort in the familiar. What are your reasons?
           </p>
 
-          <h3 id="point-of-breakdown">The Point of Breakdown</h3>
+          <h2 id="point-of-breakdown">The Point of Breakdown</h2>
           <p>
             I was practicing Outside In Living in my childhood, my teens, my
             twenties, and into my thirties, and then something changed. My
@@ -173,7 +173,7 @@ export default function InsideOutArticle() {
             breakthrough of Inside Out Living.
           </p>
 
-          <h3 id="inside-out-living">Inside Out Living</h3>
+          <h2 id="inside-out-living">Inside Out Living</h2>
           <p>
             Inside Out Living is not a formula that is guaranteed to bring peace
             and love every minute of every day. It allows us to see the reality
@@ -195,7 +195,7 @@ export default function InsideOutArticle() {
             that becomes embedded within you over time.
           </p>
 
-          <h3 id="conscious-practices">Conscious Practices</h3>
+          <h2 id="conscious-practices">Conscious Practices</h2>
           <p>
             In my experience, as I release old beliefs and programming, there is
             more space and I find I’m more aware of how I’m feeling, what I’m
@@ -218,7 +218,7 @@ export default function InsideOutArticle() {
             correct as I go.
           </p>
 
-          <h3 id="start-small">Start Small</h3>
+          <h2 id="start-small">Start Small</h2>
           <p>What’s calling to you?</p>
           <p>
             Begin with the smallest step that makes sense for you. A step that

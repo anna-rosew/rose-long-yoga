@@ -93,4 +93,11 @@
       }
     }
   }
+
+  @include respond-to(mobile) {
+    .site-logo {
+      height: 3.75em;
+      content: url("../imgs/icons/logo2_black.svg");
+    }
+  }
 }
