@@ -13,6 +13,19 @@
   }
 }
 
+.heading-container {
+  text-align: left;
+  @include respond-to(mobile) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond-to(medium) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .grid-2-columns {
   display: grid;
   grid-gap: 1.25em;

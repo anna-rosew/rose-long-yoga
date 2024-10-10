@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import "../styles/Contact.css";
+import axios from "axios";
+
+import "../styles/partials/_blog.scss";
+
 import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 import BlurryImage from "../components/BlurryImage";
-import axios from "axios";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,7 +16,7 @@ export default function Contact() {
   });
 
   const [formErrors, setFormErrors] = useState({});
-  const [message, setMessage] = useState({ text: "", type: "" }); // { text: string, type: 'success' | 'error' }
+  const [message, setMessage] = useState({ text: "", type: "" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -106,12 +108,12 @@ export default function Contact() {
   };
 
   const displayMessage = (text, type) => {
-    console.log(`Displaying message: ${text}`); // Debug log
+    console.log(`Displaying message: ${text}`);
     setMessage({ text, type });
     setTimeout(() => {
-      console.log(`Clearing message: ${text}`); // Debug log
+      console.log(`Clearing message: ${text}`);
       setMessage({ text: "", type: "" });
-    }, 5000); // Clear message after 5 seconds
+    }, 5000);
   };
 
   return (
@@ -120,7 +122,8 @@ export default function Contact() {
         <div className="heading-container">
           <h1>Contact</h1>
         </div>
-        <div className="grid grid-contact">
+
+        <div className="grid-contact">
           <div className="forms-container">
             <div className="contact-form-container">
               <h2>Get In Touch</h2>
