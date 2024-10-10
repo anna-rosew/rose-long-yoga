@@ -1,21 +1,24 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../../styles/partials/_blog-content.scss";
+import transriptIcon from "../../styles/imgs/icons/transcript.png";
+import captionsIcon from "../../styles/imgs/icons/captions.png";
+
+import CaptionsModal from "../../components/CaptionsModal";
 
 export default function LynnInterview() {
+  const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="VideoTemp">
+    <div className="BlogVideo">
       <div className="container">
         <div className="blog-article">
           <div className="article-header">
-            <h3 className="subtitle">
+            <h4 className="subtitle">
               <strong>VIDEO: </strong>INTERVIEW
-            </h3>
+            </h4>
             <h1>Mandalas, Yantras & Sacred Geometry with Lynn Hanford-Day</h1>
-            <p>
-              <strong>22 AUG 2024</strong>
-            </p>
+            <h4 className="date">08/24</h4>
             <p className="article-summary">
               Join Rose Long in conversation with visual artist Lynn
               Handford-Day, expanding on the ancient practices behind her deeply
@@ -33,6 +36,21 @@ export default function LynnInterview() {
               title="vimeo player"
             ></iframe>
           </div>
+          <div className="button-column">
+            <div className="accessibility-video-button" role="button">
+              <img className="icon" src={transriptIcon} alt="transcript-icon" />
+              TRANSCRIPT
+            </div>
+            <div
+              className="accessibility-video-button"
+              role="button"
+              onClick={() => setOpenModal(true)}
+            >
+              <img className="icon" src={captionsIcon} alt="transcript-icon" />
+              CAPTIONS
+            </div>
+            {openModal && <CaptionsModal closeModal={setOpenModal} />}
+          </div>
           <p className="image-caption">
             You can turn on <strong>live captions</strong> using{" "}
             <a
@@ -48,7 +66,7 @@ export default function LynnInterview() {
           <Link to="/SelfArticle" className="blog-button" role="button">
             MORE CONTENT
           </Link>
-          <Link to="/work" className="blog-button" role="button">
+          <Link to="/work" className="blog-button inverse-button" role="button">
             START YOUR JOURNEY
           </Link>
         </div>
