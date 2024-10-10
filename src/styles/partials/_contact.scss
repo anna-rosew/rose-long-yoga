@@ -15,6 +15,7 @@
 }
 
 .grid-contact {
+  display: grid;
   grid-template-columns: 1.5fr 1fr;
 
   @include respond-to(mobile) {
@@ -167,10 +168,11 @@
 
 .contact-image-container {
   display: block;
-  width: 37.5em;
+  padding: 1em 0em 1em 0em;
+  width: 25em;
 
   img {
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     border-radius: 2.81em;
   }

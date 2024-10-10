@@ -122,7 +122,6 @@ export default function Contact() {
         <div className="heading-container">
           <h1>Contact</h1>
         </div>
-
         <div className="grid-contact">
           <div className="forms-container">
             <div className="contact-form-container">
