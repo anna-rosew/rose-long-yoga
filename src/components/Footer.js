@@ -24,6 +24,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-footer"
+                alt="Instagram Link"
               >
                 <img src={InstaIcon} alt="Instagram" />
               </a>
@@ -32,6 +33,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-footer"
+                alt="Vimeo Link"
               >
                 <img src={VimeoIcon} alt="Vimeo" />
               </a>
