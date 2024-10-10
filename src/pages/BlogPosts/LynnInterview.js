@@ -36,7 +36,7 @@ export default function LynnInterview() {
               title="vimeo player"
             ></iframe>
           </div>
-          <div className="button-column">
+          <div className="accessibility-buttons">
             <div className="accessibility-video-button" role="button">
               <img className="icon" src={transriptIcon} alt="transcript-icon" />
               TRANSCRIPT
@@ -51,16 +51,6 @@ export default function LynnInterview() {
             </div>
             {openModal && <CaptionsModal closeModal={setOpenModal} />}
           </div>
-          <p className="image-caption">
-            You can turn on <strong>live captions</strong> using{" "}
-            <a
-              href="https://support.google.com/chrome/answer/10538231?hl=en-GB"
-              alt="Google Chrome Live Captioning and Translating"
-              rel="nonreferrer"
-            >
-              Google Chrome.
-            </a>{" "}
-          </p>
         </div>{" "}
         <div className="blog-bottom-buttons">
           <Link to="/SelfArticle" className="blog-button" role="button">

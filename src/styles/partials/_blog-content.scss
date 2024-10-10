@@ -264,7 +264,7 @@ article .blog-article {
 
 .blog-bottom-buttons {
   border-top: 0.13em solid rgba(0, 0, 0, 0.7);
-  margin-top: 2em;
+  margin-top: 1em;
   padding-top: 0.5em;
 }
 
@@ -283,6 +283,8 @@ article .blog-article {
   align-items: flex-start;
   padding: 0.1em;
   z-index: 9999;
+  text-transform: none;
+
   .modal-container {
     background-color: $quaternary-color;
     padding: 2em 1em;
