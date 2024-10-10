@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import CopyButton from "../../components/CopyButton";
 
 import "../../styles/partials/_blog-content.scss";
+
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";

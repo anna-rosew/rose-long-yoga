@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+
+import CopyButton from "../../components/CopyButton";
 
 import "../../styles/partials/_blog-content.scss";
 
@@ -9,75 +11,60 @@ import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function InsideOutArticle() {
-  const [copied, setCopied] = useState(false);
-
   const onClick = (sectionId) => {
     window.location.href = `#${sectionId}`;
-  };
-
-  const handleCopy = () => {
-    navigator.clipboard
-      .writeText(window.location.href)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      })
-      .catch((err) => {
-        console.error("Failed to copy text: ", err);
-      });
   };
 
   return (
     <div className="container">
       <article className="blog-article">
-        <h3 className="subtitle">
-          <strong>ARTICLE: </strong>LONG READ
-        </h3>
-        <h1>Moving from Outside In to Inside Out</h1>
-        <p className="article-summary">
-          Explore the journey of shifting from a consumer-oriented mindset to an
-          inward-focused approach, and discover how making small, conscious
-          choices can lead to profound personal transformation.
-        </p>
-        <div className="article-cover-container">
-          <BlurryImage
-            src={FoodImg}
-            className="blog-cover-img"
-            alt="Woman doing tree pose outside at sunrise."
-          />
-          <div className="overlay-row">
-            <div style={{ display: "flex" }}>
-              <div className="column" style={{ marginRight: "20px" }}>
-                <p>Written by</p>
-                <p>
-                  <strong>Rose Long</strong>
-                </p>
+        <div className="article-header">
+          <h4 className="subtitle">
+            <strong>ARTICLE: </strong>LONG READ
+          </h4>
+          <h1>Moving from Outside In to Inside Out</h1>
+          <p className="article-summary">
+            Explore the journey of shifting from a consumer-oriented mindset to
+            an inward-focused approach, and discover how making small, conscious
+            choices can lead to profound personal transformation.
+          </p>
+          <div className="article-cover-container">
+            <BlurryImage
+              src={FoodImg}
+              className="blog-cover-img"
+              alt="Woman doing tree pose outside at sunrise."
+            />
+            <div className="overlay-row">
+              <div style={{ display: "flex" }}>
+                <div className="column" style={{ marginRight: "20px" }}>
+                  <p className="author">Written by</p>
+                  <p>
+                    <strong>Rose Long</strong>
+                  </p>
+                </div>
+                <div className="column publication-date">
+                  <p>Published on</p>
+                  <p>
+                    <strong>01 Aug 2024</strong>
+                  </p>
+                </div>
               </div>
-              <div className="column">
-                <p>Published on</p>
-                <p>
-                  <strong>01 Aug 2024</strong>
-                </p>
+              <div className="button-column">
+                <CopyButton />
               </div>
-            </div>
-            <div className="button-column">
-              {copied && <p className="copied-message">Copied!</p>}
-              <button className="copy-button" onClick={handleCopy}>
-                COPY LINK
-              </button>
             </div>
           </div>
+          <p className="image-caption">
+            Image Courtsey of Chad Stembridge via{" "}
+            <a
+              href="https://unsplash.com/photos/green-leafed-plant-in-shallow-focus-photography--8FjF1p-aw0"
+              alt="unsplash"
+              rel="nonreferrer"
+            >
+              Unsplash
+            </a>
+          </p>
         </div>
-        <p className="image-caption">
-          Image Courtesy of Chad Stembridge via{" "}
-          <a
-            href="https://unsplash.com/photos/green-leafed-plant-in-shallow-focus-photography--8FjF1p-aw0"
-            alt="unsplash"
-            rel="nonreferrer"
-          >
-            Unsplash
-          </a>
-        </p>
         <div className="article-intro">
           <div className="contents">
             <h3>CONTENTS:</h3>
@@ -85,6 +72,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("introduction")}
+                role="navigation"
               >
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
@@ -92,6 +80,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("outside-in-living")}
+                role="navigation"
               >
                 Outside In Living
                 <img src={arrow} alt="arrow" className="arrow-nav" />
@@ -99,6 +88,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("point-of-breakdown")}
+                role="navigation"
               >
                 The Point of Breakdown
                 <img src={arrow} alt="arrow" className="arrow-nav" />
@@ -106,6 +96,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("inside-out-living")}
+                role="navigation"
               >
                 Inside Out Living
                 <img src={arrow} alt="arrow" className="arrow-nav" />
@@ -113,6 +104,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("conscious-practices")}
+                role="navigation"
               >
                 Conscious Practices
                 <img src={arrow} alt="arrow" className="arrow-nav" />
@@ -120,6 +112,7 @@ export default function InsideOutArticle() {
               <li
                 className="contents-link"
                 onClick={() => onClick("start-small")}
+                role="navigation"
               >
                 Start Small
                 <img src={arrow} alt="arrow" className="arrow-nav" />

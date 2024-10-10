@@ -3,14 +3,6 @@
 @import "./variables";
 @import "./mixins";
 
-
-
-/* --------------------- Universal Article Header ---------------------*/
-
-/* --------------------- Universal Article Footer ---------------------*/
-
-/* --------------------- Short Article ---------------------*/
-
 article .blog-article {
   text-align: left;
 
@@ -20,6 +12,8 @@ article .blog-article {
     margin: 0.13em;
   }
 }
+
+/* --------------------- Universal Article Header ---------------------*/
 
 .article-header {
   margin: 3em 0 1.5em 0;
@@ -108,6 +102,69 @@ article .blog-article {
     display: none;
   }
 }
+
+/* --------------------- Universal Article Footer ---------------------*/
+
+.article-footer {
+  border-top: 0.13em solid rgba(0, 0, 0, 0.7);
+  margin-top: 1em;
+  padding-top: 0.5em;
+}
+
+/* --------------------- Short and Universal Article Styles ---------------------*/
+
+.article-section {
+  margin-top: 3.13em;
+}
+
+.blog-article a {
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.article-highlight {
+  color: #862b0e;
+  border-left: 0.13em solid #862b0e;
+  padding-left: 1.25em;
+  margin: 1.25em;
+}
+
+.featured-image-container {
+  width: 100%;
+  height: 25em;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1.25em;
+  overflow: hidden;
+  position: relative;
+
+  @include respond-to(mobile) {
+    height: 12.5em;
+  }
+}
+
+.blog-feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.25em;
+}
+
+.image-caption {
+  font-weight: 400;
+  opacity: 0.5;
+  color: black;
+  margin: 0.63em;
+
+  a {
+    color: black;
+  }
+}
+
+/* --------------------- Long Article Styles ---------------------*/
 
 .article-intro {
   margin-top: 1.25em;
@@ -215,63 +272,6 @@ article .blog-article {
   font-size: 1.5em;
   line-height: 1.56em;
   letter-spacing: 0.02em;
-}
-
-.article-section {
-  margin-top: 3.13em;
-}
-
-.blog-article a {
-  color: black;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.article-highlight {
-  color: #862b0e;
-  border-left: 0.13em solid #862b0e;
-  padding-left: 1.25em;
-  margin: 1.25em;
-}
-
-.featured-image-container {
-  width: 100%;
-  height: 25em;
-  margin: 0 auto;
-  display: block;
-  border-radius: 1.25em;
-  overflow: hidden;
-  position: relative;
-
-  @include respond-to(mobile) {
-    height: 12.5em;
-  }
-}
-
-.blog-feature-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25em;
-}
-
-.image-caption {
-  font-weight: 400;
-  opacity: 0.5;
-  color: black;
-  margin: 0.63em;
-
-  a {
-    color: black;
-  }
-}
-
-.article-footer {
-  border-top: 0.13em solid rgba(0, 0, 0, 0.7);
-  margin-top: 1em;
-  padding-top: 0.5em;
 }
 
 /* --------------------- Video ---------------------*/
