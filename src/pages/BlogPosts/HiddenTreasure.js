@@ -17,7 +17,7 @@ export default function HiddenTreasure() {
       .writeText(window.location.href)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Hide message after 2 seconds
+        setTimeout(() => setCopied(false), 2000); 
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
